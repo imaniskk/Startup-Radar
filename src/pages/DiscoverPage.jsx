@@ -1,9 +1,12 @@
 import { useOutletContext } from "react-router-dom";
 import { useState, useEffect } from "react";
+import previewStartups from "../data/startups_seed.json";
 import "./DiscoverPage.css";
 
 export default function DiscoverPage() {
-  const [startups, setStartups] = useState([]);
+  const [apiStartups, setApiStartups] = useState([]);
+  const [usePreview, setUsePreview] = useState(false);
+  const startups = usePreview ? previewStartups : apiStartups;
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
 
@@ -24,25 +27,38 @@ export default function DiscoverPage() {
 
   // Get startup data from the Python backend and Supabase
   useEffect(() => {
+    const controller = new AbortController();
+
     async function fetchStartups() {
       try {
-        const response = await fetch("http://127.0.0.1:8000/startups");
+        const response = await fetch("http://127.0.0.1:8000/startups", {
+          signal: controller.signal,
+        });
 
         if (!response.ok) {
           throw new Error("Failed to fetch startups");
         }
 
         const data = await response.json();
-        setStartups(Array.isArray(data) ? data : []);
+        if (!Array.isArray(data)) {
+          throw new Error("Expected a list of startups");
+        }
+        setApiStartups(data.map((startup) => ({
+          ...startup,
+          id: startup.startup_id ?? startup.id,
+          funding_round: startup.funding_round ?? startup.seed_round ?? null,
+        })));
       } catch (err) {
+        if (controller.signal.aborted) return;
         console.error("Error loading startups:", err);
         setError("Unable to load startups. Check that the backend is running.");
       } finally {
-        setLoading(false);
+        if (!controller.signal.aborted) setLoading(false);
       }
     }
 
     fetchStartups();
+    return () => controller.abort();
   }, []);
 
   // Apply all filters together
@@ -61,7 +77,7 @@ export default function DiscoverPage() {
 
     const matchesStage =
       selectedStage === "All" ||
-      startup.seed_round === selectedStage;
+      (startup.funding_round ?? "Not verified") === selectedStage;
 
     const matchesSaved =
       !showSaved || savedStartups.includes(startup.id);
@@ -87,7 +103,7 @@ export default function DiscoverPage() {
   // Build filter options from real startup data
   const industries = [...new Set(startups.map((s) => s.industry).filter(Boolean))];
   const locations = [...new Set(startups.map((s) => s.location).filter(Boolean))];
-  const stages = [...new Set(startups.map((s) => s.seed_round).filter(Boolean))];
+  const stages = [...new Set(startups.map((s) => s.funding_round ?? "Not verified").filter(Boolean))];
 
   return (
     <main className="discover-page">
@@ -99,6 +115,27 @@ export default function DiscoverPage() {
           Find startups that match your interests!
         </p>
       </header>
+
+      <div className="search-panel">
+        <label>
+          <input
+            type="checkbox"
+            checked={usePreview}
+            onChange={(event) => {
+              setUsePreview(event.target.checked);
+              setSelectedIndustry("All");
+              setSelectedLocation("All");
+              setSelectedStage("All");
+            }}
+          />{" "}
+          Use local YC preview data (no backend required)
+        </label>
+        <p className="discover-subtitle">
+          {usePreview
+            ? "Preview: 50 real YC startups retrieved November 9, 2026. Funding is unverified."
+            : "Showing startup data from the team backend."}
+        </p>
+      </div>
 
       {/* Search and filter section */}
       <div className="search-panel">
@@ -183,19 +220,19 @@ export default function DiscoverPage() {
         </button>
       </div>
 
-      {loading && (
+      {!usePreview && loading && (
         <div className="empty-results">
           Loading startups...
         </div>
       )}
 
-      {error && (
+      {!usePreview && error && (
         <div className="empty-results">
           {error}
         </div>
       )}
 
-      {!loading && !error && (
+      {(usePreview || (!loading && !error)) && (
         <>
           <div className="startup-grid">
             {filteredStartups.map((startup) => {
@@ -222,7 +259,7 @@ export default function DiscoverPage() {
                   </span>
 
                   <p>📍 {startup.location}</p>
-                  <p>🚀 Funding Stage: {startup.seed_round}</p>
+                  <p>🚀 Funding Stage: {startup.funding_round ?? "Not verified"}</p>
 
                   <div className="startup-card-actions">
                     <button

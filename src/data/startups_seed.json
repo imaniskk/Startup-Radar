@@ -1,0 +1,1142 @@
+[
+  {
+    "id": "yc-90",
+    "name": "AgileMD",
+    "description": "Predictive analytics and clinical pathways for hospitals ",
+    "industry": "Healthcare",
+    "industries": [
+      "Healthcare",
+      "Healthcare IT"
+    ],
+    "location": "San Francisco, CA, USA; Remote",
+    "website": "https://agilemd.com",
+    "funding_round": null,
+    "source": {
+      "name": "YC OSS API (unofficial dataset derived from the YC directory)",
+      "dataset_url": "https://yc-oss.github.io/api/companies/all.json",
+      "company_url": "https://www.ycombinator.com/companies/agilemd",
+      "record_url": "https://yc-oss.github.io/api/batches/summer-2011/agilemd.json",
+      "yc_id": 90,
+      "yc_batch": "Summer 2011",
+      "status_at_retrieval": "Active",
+      "retrieved_at": "2026-11-09"
+    }
+  },
+  {
+    "id": "yc-691",
+    "name": "Alchemy",
+    "description": "Nanotechnology-enabled coatings for automotive and defence sectors",
+    "industry": "Industrials",
+    "industries": [
+      "Industrials",
+      "Manufacturing and Robotics"
+    ],
+    "location": "Waterloo, ON, Canada",
+    "website": "http://www.alchemynano.com",
+    "funding_round": null,
+    "source": {
+      "name": "YC OSS API (unofficial dataset derived from the YC directory)",
+      "dataset_url": "https://yc-oss.github.io/api/companies/all.json",
+      "company_url": "https://www.ycombinator.com/companies/alchemy",
+      "record_url": "https://yc-oss.github.io/api/batches/summer-2014/alchemy.json",
+      "yc_id": 691,
+      "yc_batch": "Summer 2014",
+      "status_at_retrieval": "Active",
+      "retrieved_at": "2026-11-09"
+    }
+  },
+  {
+    "id": "yc-188",
+    "name": "AnyList",
+    "description": "One app for stress-free shopping, cooking, and meal planning.",
+    "industry": "Consumer",
+    "industries": [
+      "Consumer",
+      "Home and Personal"
+    ],
+    "location": "Missoula, MT, USA; Remote",
+    "website": "https://www.anylist.com",
+    "funding_round": null,
+    "source": {
+      "name": "YC OSS API (unofficial dataset derived from the YC directory)",
+      "dataset_url": "https://yc-oss.github.io/api/companies/all.json",
+      "company_url": "https://www.ycombinator.com/companies/anylist",
+      "record_url": "https://yc-oss.github.io/api/batches/summer-2010/anylist.json",
+      "yc_id": 188,
+      "yc_batch": "Summer 2010",
+      "status_at_retrieval": "Active",
+      "retrieved_at": "2026-11-09"
+    }
+  },
+  {
+    "id": "yc-72",
+    "name": "Apollo",
+    "description": "Apollo helps engineering teams accelerate delivery",
+    "industry": "B2B",
+    "industries": [
+      "B2B",
+      "Infrastructure"
+    ],
+    "location": "San Francisco, CA, USA; Remote",
+    "website": "http://apollographql.com/",
+    "funding_round": null,
+    "source": {
+      "name": "YC OSS API (unofficial dataset derived from the YC directory)",
+      "dataset_url": "https://yc-oss.github.io/api/companies/all.json",
+      "company_url": "https://www.ycombinator.com/companies/apollo",
+      "record_url": "https://yc-oss.github.io/api/batches/summer-2011/apollo.json",
+      "yc_id": 72,
+      "yc_batch": "Summer 2011",
+      "status_at_retrieval": "Active",
+      "retrieved_at": "2026-11-09"
+    }
+  },
+  {
+    "id": "yc-755",
+    "name": "Bright",
+    "description": "Sunrun for the developing world",
+    "industry": "Industrials",
+    "industries": [
+      "Industrials",
+      "Energy"
+    ],
+    "location": "New York City, NY, USA; Mexico City, CDMX, Mexico; Remote",
+    "website": "https://www.thinkbright.mx",
+    "funding_round": null,
+    "source": {
+      "name": "YC OSS API (unofficial dataset derived from the YC directory)",
+      "dataset_url": "https://yc-oss.github.io/api/companies/all.json",
+      "company_url": "https://www.ycombinator.com/companies/bright",
+      "record_url": "https://yc-oss.github.io/api/batches/winter-2015/bright.json",
+      "yc_id": 755,
+      "yc_batch": "Winter 2015",
+      "status_at_retrieval": "Active",
+      "retrieved_at": "2026-11-09"
+    }
+  },
+  {
+    "id": "yc-347",
+    "name": "Buxfer",
+    "description": "Buxfer helps you make better spending decisions by making it easy to…",
+    "industry": "Fintech",
+    "industries": [
+      "Fintech",
+      "Consumer Finance"
+    ],
+    "location": "San Francisco, CA, USA; Santa Clara, CA, USA",
+    "website": "https://www.buxfer.com",
+    "funding_round": null,
+    "source": {
+      "name": "YC OSS API (unofficial dataset derived from the YC directory)",
+      "dataset_url": "https://yc-oss.github.io/api/companies/all.json",
+      "company_url": "https://www.ycombinator.com/companies/buxfer",
+      "record_url": "https://yc-oss.github.io/api/batches/winter-2007/buxfer.json",
+      "yc_id": 347,
+      "yc_batch": "Winter 2007",
+      "status_at_retrieval": "Active",
+      "retrieved_at": "2026-11-09"
+    }
+  },
+  {
+    "id": "yc-5",
+    "name": "CircuitHub",
+    "description": "On-Demand Electronics Manufacturing",
+    "industry": "Industrials",
+    "industries": [
+      "Industrials",
+      "Manufacturing and Robotics"
+    ],
+    "location": "London, England, United Kingdom",
+    "website": "https://circuithub.com",
+    "funding_round": null,
+    "source": {
+      "name": "YC OSS API (unofficial dataset derived from the YC directory)",
+      "dataset_url": "https://yc-oss.github.io/api/companies/all.json",
+      "company_url": "https://www.ycombinator.com/companies/circuithub",
+      "record_url": "https://yc-oss.github.io/api/batches/winter-2012/circuithub.json",
+      "yc_id": 5,
+      "yc_batch": "Winter 2012",
+      "status_at_retrieval": "Active",
+      "retrieved_at": "2026-11-09"
+    }
+  },
+  {
+    "id": "yc-32",
+    "name": "CleverDeck",
+    "description": "Collaborate with an artist to commission original artwork you'll live…",
+    "industry": "Education",
+    "industries": [
+      "Education"
+    ],
+    "location": "San Francisco, CA, USA; Istanbul, Istanbul, Turkey",
+    "website": "http://cleverdeck.com",
+    "funding_round": null,
+    "source": {
+      "name": "YC OSS API (unofficial dataset derived from the YC directory)",
+      "dataset_url": "https://yc-oss.github.io/api/companies/all.json",
+      "company_url": "https://www.ycombinator.com/companies/cleverdeck",
+      "record_url": "https://yc-oss.github.io/api/batches/winter-2012/cleverdeck.json",
+      "yc_id": 32,
+      "yc_batch": "Winter 2012",
+      "status_at_retrieval": "Active",
+      "retrieved_at": "2026-11-09"
+    }
+  },
+  {
+    "id": "yc-1434",
+    "name": "DemocracyOS",
+    "description": "Online space for deliberation, policy making and democratic…",
+    "industry": "Government",
+    "industries": [
+      "Government"
+    ],
+    "location": "Buenos Aires, CABA, Argentina",
+    "website": "http://www.democracyos.org",
+    "funding_round": null,
+    "source": {
+      "name": "YC OSS API (unofficial dataset derived from the YC directory)",
+      "dataset_url": "https://yc-oss.github.io/api/companies/all.json",
+      "company_url": "https://www.ycombinator.com/companies/democracyos",
+      "record_url": "https://yc-oss.github.io/api/batches/winter-2015/democracyos.json",
+      "yc_id": 1434,
+      "yc_batch": "Winter 2015",
+      "status_at_retrieval": "Active",
+      "retrieved_at": "2026-11-09"
+    }
+  },
+  {
+    "id": "yc-417",
+    "name": "Eligible",
+    "description": "Insurance Billing APIs for Healthcare Businesses ",
+    "industry": "Healthcare",
+    "industries": [
+      "Healthcare",
+      "Healthcare IT"
+    ],
+    "location": "New York City, NY, USA; Brooklyn, NY, USA",
+    "website": "https://eligible.com",
+    "funding_round": null,
+    "source": {
+      "name": "YC OSS API (unofficial dataset derived from the YC directory)",
+      "dataset_url": "https://yc-oss.github.io/api/companies/all.json",
+      "company_url": "https://www.ycombinator.com/companies/eligible",
+      "record_url": "https://yc-oss.github.io/api/batches/summer-2012/eligible.json",
+      "yc_id": 417,
+      "yc_batch": "Summer 2012",
+      "status_at_retrieval": "Active",
+      "retrieved_at": "2026-11-09"
+    }
+  },
+  {
+    "id": "yc-497",
+    "name": "Experiment",
+    "description": "crowdfunding platform for science",
+    "industry": "Healthcare",
+    "industries": [
+      "Healthcare",
+      "Healthcare Services"
+    ],
+    "location": "Honolulu, HI, USA; Remote",
+    "website": "http://experiment.com",
+    "funding_round": null,
+    "source": {
+      "name": "YC OSS API (unofficial dataset derived from the YC directory)",
+      "dataset_url": "https://yc-oss.github.io/api/companies/all.json",
+      "company_url": "https://www.ycombinator.com/companies/experiment",
+      "record_url": "https://yc-oss.github.io/api/batches/winter-2013/experiment.json",
+      "yc_id": 497,
+      "yc_batch": "Winter 2013",
+      "status_at_retrieval": "Active",
+      "retrieved_at": "2026-11-09"
+    }
+  },
+  {
+    "id": "yc-415",
+    "name": "FundersClub",
+    "description": "Online VC",
+    "industry": "Fintech",
+    "industries": [
+      "Fintech",
+      "Asset Management"
+    ],
+    "location": "San Francisco, CA, USA; Remote",
+    "website": "https://fundersclub.com/",
+    "funding_round": null,
+    "source": {
+      "name": "YC OSS API (unofficial dataset derived from the YC directory)",
+      "dataset_url": "https://yc-oss.github.io/api/companies/all.json",
+      "company_url": "https://www.ycombinator.com/companies/fundersclub",
+      "record_url": "https://yc-oss.github.io/api/batches/summer-2012/fundersclub.json",
+      "yc_id": 415,
+      "yc_batch": "Summer 2012",
+      "status_at_retrieval": "Active",
+      "retrieved_at": "2026-11-09"
+    }
+  },
+  {
+    "id": "yc-639",
+    "name": "GBatteries",
+    "description": "Enabling li-ion batteries to charge ultra fast without compromising…",
+    "industry": "Industrials",
+    "industries": [
+      "Industrials",
+      "Climate"
+    ],
+    "location": "Ottawa, ON, Canada",
+    "website": "https://www.gbatteries.com",
+    "funding_round": null,
+    "source": {
+      "name": "YC OSS API (unofficial dataset derived from the YC directory)",
+      "dataset_url": "https://yc-oss.github.io/api/companies/all.json",
+      "company_url": "https://www.ycombinator.com/companies/gbatteries",
+      "record_url": "https://yc-oss.github.io/api/batches/winter-2014/gbatteries.json",
+      "yc_id": 639,
+      "yc_batch": "Winter 2014",
+      "status_at_retrieval": "Active",
+      "retrieved_at": "2026-11-09"
+    }
+  },
+  {
+    "id": "yc-168",
+    "name": "GOAT Group",
+    "description": "Platform for the greatest products from the past, present and future.",
+    "industry": "Consumer",
+    "industries": [
+      "Consumer",
+      "Apparel and Cosmetics"
+    ],
+    "location": "Los Angeles, CA, USA",
+    "website": "https://www.goatgroup.com/",
+    "funding_round": null,
+    "source": {
+      "name": "YC OSS API (unofficial dataset derived from the YC directory)",
+      "dataset_url": "https://yc-oss.github.io/api/companies/all.json",
+      "company_url": "https://www.ycombinator.com/companies/goat-group",
+      "record_url": "https://yc-oss.github.io/api/batches/winter-2011/goat-group.json",
+      "yc_id": 168,
+      "yc_batch": "Winter 2011",
+      "status_at_retrieval": "Active",
+      "retrieved_at": "2026-11-09"
+    }
+  },
+  {
+    "id": "yc-24",
+    "name": "Gusto",
+    "description": "Provides growing businesses with everything to take care of their team",
+    "industry": "B2B",
+    "industries": [
+      "B2B",
+      "Human Resources"
+    ],
+    "location": "San Francisco, CA, USA",
+    "website": "https://gusto.com",
+    "funding_round": null,
+    "source": {
+      "name": "YC OSS API (unofficial dataset derived from the YC directory)",
+      "dataset_url": "https://yc-oss.github.io/api/companies/all.json",
+      "company_url": "https://www.ycombinator.com/companies/gusto",
+      "record_url": "https://yc-oss.github.io/api/batches/winter-2012/gusto.json",
+      "yc_id": 24,
+      "yc_batch": "Winter 2012",
+      "status_at_retrieval": "Active",
+      "retrieved_at": "2026-11-09"
+    }
+  },
+  {
+    "id": "yc-73",
+    "name": "HackerRank",
+    "description": "Change the world to value skills over pedigree",
+    "industry": "B2B",
+    "industries": [
+      "B2B",
+      "Recruiting and Talent"
+    ],
+    "location": "San Francisco, CA, USA",
+    "website": "http://hackerrank.com",
+    "funding_round": null,
+    "source": {
+      "name": "YC OSS API (unofficial dataset derived from the YC directory)",
+      "dataset_url": "https://yc-oss.github.io/api/companies/all.json",
+      "company_url": "https://www.ycombinator.com/companies/hackerrank",
+      "record_url": "https://yc-oss.github.io/api/batches/summer-2011/hackerrank.json",
+      "yc_id": 73,
+      "yc_batch": "Summer 2011",
+      "status_at_retrieval": "Active",
+      "retrieved_at": "2026-11-09"
+    }
+  },
+  {
+    "id": "yc-405",
+    "name": "HealthSherpa",
+    "description": "Private sector Healthcare.gov. ",
+    "industry": "Healthcare",
+    "industries": [
+      "Healthcare",
+      "Healthcare Services"
+    ],
+    "location": "Sacramento, CA, USA; Remote",
+    "website": "https://healthsherpa.com",
+    "funding_round": null,
+    "source": {
+      "name": "YC OSS API (unofficial dataset derived from the YC directory)",
+      "dataset_url": "https://yc-oss.github.io/api/companies/all.json",
+      "company_url": "https://www.ycombinator.com/companies/healthsherpa",
+      "record_url": "https://yc-oss.github.io/api/batches/summer-2012/healthsherpa.json",
+      "yc_id": 405,
+      "yc_batch": "Summer 2012",
+      "status_at_retrieval": "Active",
+      "retrieved_at": "2026-11-09"
+    }
+  },
+  {
+    "id": "yc-730",
+    "name": "Helion Energy",
+    "description": "Building the world's first fusion power plant",
+    "industry": "Industrials",
+    "industries": [
+      "Industrials",
+      "Energy"
+    ],
+    "location": "Seattle, WA, USA; Everett, WA, USA",
+    "website": "http://helionenergy.com",
+    "funding_round": null,
+    "source": {
+      "name": "YC OSS API (unofficial dataset derived from the YC directory)",
+      "dataset_url": "https://yc-oss.github.io/api/companies/all.json",
+      "company_url": "https://www.ycombinator.com/companies/helion-energy",
+      "record_url": "https://yc-oss.github.io/api/batches/summer-2014/helion-energy.json",
+      "yc_id": 730,
+      "yc_batch": "Summer 2014",
+      "status_at_retrieval": "Active",
+      "retrieved_at": "2026-11-09"
+    }
+  },
+  {
+    "id": "yc-14",
+    "name": "HireArt",
+    "description": "Gives businesses everything needed to hire & manage W2 contractors.",
+    "industry": "B2B",
+    "industries": [
+      "B2B",
+      "Recruiting and Talent"
+    ],
+    "location": "New York City, NY, USA; New York, NY, USA",
+    "website": "http://hireart.com",
+    "funding_round": null,
+    "source": {
+      "name": "YC OSS API (unofficial dataset derived from the YC directory)",
+      "dataset_url": "https://yc-oss.github.io/api/companies/all.json",
+      "company_url": "https://www.ycombinator.com/companies/hireart",
+      "record_url": "https://yc-oss.github.io/api/batches/winter-2012/hireart.json",
+      "yc_id": 14,
+      "yc_batch": "Winter 2012",
+      "status_at_retrieval": "Active",
+      "retrieved_at": "2026-11-09"
+    }
+  },
+  {
+    "id": "yc-403",
+    "name": "Human Dx",
+    "description": "The Human Diagnosis Project.",
+    "industry": "Healthcare",
+    "industries": [
+      "Healthcare",
+      "Healthcare IT"
+    ],
+    "location": "San Francisco, CA, USA",
+    "website": "http://humandx.org",
+    "funding_round": null,
+    "source": {
+      "name": "YC OSS API (unofficial dataset derived from the YC directory)",
+      "dataset_url": "https://yc-oss.github.io/api/companies/all.json",
+      "company_url": "https://www.ycombinator.com/companies/human-dx",
+      "record_url": "https://yc-oss.github.io/api/batches/summer-2012/human-dx.json",
+      "yc_id": 403,
+      "yc_batch": "Summer 2012",
+      "status_at_retrieval": "Active",
+      "retrieved_at": "2026-11-09"
+    }
+  },
+  {
+    "id": "yc-146",
+    "name": "Instapainting",
+    "description": "Custom-made artwork from artists e-commerce marketplace.",
+    "industry": "Consumer",
+    "industries": [
+      "Consumer",
+      "Home and Personal"
+    ],
+    "location": "Tokyo, Tokyo, Japan; San Francisco, CA, USA; Remote",
+    "website": "http://instapainting.com",
+    "funding_round": null,
+    "source": {
+      "name": "YC OSS API (unofficial dataset derived from the YC directory)",
+      "dataset_url": "https://yc-oss.github.io/api/companies/all.json",
+      "company_url": "https://www.ycombinator.com/companies/instapainting",
+      "record_url": "https://yc-oss.github.io/api/batches/winter-2011/instapainting.json",
+      "yc_id": 146,
+      "yc_batch": "Winter 2011",
+      "status_at_retrieval": "Active",
+      "retrieved_at": "2026-11-09"
+    }
+  },
+  {
+    "id": "yc-105",
+    "name": "LeadGenius",
+    "description": "LeadGenius is an account-based marketing and lead generation…",
+    "industry": "B2B",
+    "industries": [
+      "B2B",
+      "Sales"
+    ],
+    "location": "San Francisco, CA, USA; Berkeley, CA, USA",
+    "website": "http://leadgenius.com",
+    "funding_round": null,
+    "source": {
+      "name": "YC OSS API (unofficial dataset derived from the YC directory)",
+      "dataset_url": "https://yc-oss.github.io/api/companies/all.json",
+      "company_url": "https://www.ycombinator.com/companies/leadgenius",
+      "record_url": "https://yc-oss.github.io/api/batches/summer-2011/leadgenius.json",
+      "yc_id": 105,
+      "yc_batch": "Summer 2011",
+      "status_at_retrieval": "Active",
+      "retrieved_at": "2026-11-09"
+    }
+  },
+  {
+    "id": "yc-259",
+    "name": "Lingt",
+    "description": "Lingt provided a web-based platform for learning languages leveraging…",
+    "industry": "Education",
+    "industries": [
+      "Education"
+    ],
+    "location": "San Francisco, CA, USA",
+    "website": "https://www.lingt.com/",
+    "funding_round": null,
+    "source": {
+      "name": "YC OSS API (unofficial dataset derived from the YC directory)",
+      "dataset_url": "https://yc-oss.github.io/api/companies/all.json",
+      "company_url": "https://www.ycombinator.com/companies/lingt",
+      "record_url": "https://yc-oss.github.io/api/batches/summer-2009/lingt.json",
+      "yc_id": 259,
+      "yc_batch": "Summer 2009",
+      "status_at_retrieval": "Active",
+      "retrieved_at": "2026-11-09"
+    }
+  },
+  {
+    "id": "yc-16",
+    "name": "Medigram",
+    "description": "We are making a HIPAA-compliant, Groupme app for doctors to…",
+    "industry": "Healthcare",
+    "industries": [
+      "Healthcare",
+      "Healthcare IT"
+    ],
+    "location": "Los Gatos, CA, USA",
+    "website": "http://medigram.com",
+    "funding_round": null,
+    "source": {
+      "name": "YC OSS API (unofficial dataset derived from the YC directory)",
+      "dataset_url": "https://yc-oss.github.io/api/companies/all.json",
+      "company_url": "https://www.ycombinator.com/companies/medigram",
+      "record_url": "https://yc-oss.github.io/api/batches/winter-2012/medigram.json",
+      "yc_id": 16,
+      "yc_batch": "Winter 2012",
+      "status_at_retrieval": "Active",
+      "retrieved_at": "2026-11-09"
+    }
+  },
+  {
+    "id": "yc-62",
+    "name": "Medmonk",
+    "description": "A tool for pharmacists to find funding for patients who are unable to…",
+    "industry": "Healthcare",
+    "industries": [
+      "Healthcare",
+      "Healthcare Services"
+    ],
+    "location": "Milpitas, CA, USA",
+    "website": "http://medmonk.com",
+    "funding_round": null,
+    "source": {
+      "name": "YC OSS API (unofficial dataset derived from the YC directory)",
+      "dataset_url": "https://yc-oss.github.io/api/companies/all.json",
+      "company_url": "https://www.ycombinator.com/companies/medmonk",
+      "record_url": "https://yc-oss.github.io/api/batches/winter-2012/medmonk.json",
+      "yc_id": 62,
+      "yc_batch": "Winter 2012",
+      "status_at_retrieval": "Active",
+      "retrieved_at": "2026-11-09"
+    }
+  },
+  {
+    "id": "yc-164",
+    "name": "Mino Games",
+    "description": "Mobile games company",
+    "industry": "Consumer",
+    "industries": [
+      "Consumer",
+      "Gaming"
+    ],
+    "location": "San Francisco, CA, USA; Montreal, QC, Canada",
+    "website": "http://minomonsters.com",
+    "funding_round": null,
+    "source": {
+      "name": "YC OSS API (unofficial dataset derived from the YC directory)",
+      "dataset_url": "https://yc-oss.github.io/api/companies/all.json",
+      "company_url": "https://www.ycombinator.com/companies/mino-games",
+      "record_url": "https://yc-oss.github.io/api/batches/winter-2011/mino-games.json",
+      "yc_id": 164,
+      "yc_batch": "Winter 2011",
+      "status_at_retrieval": "Active",
+      "retrieved_at": "2026-11-09"
+    }
+  },
+  {
+    "id": "yc-76",
+    "name": "OneSignal",
+    "description": "Engage customers through personalized omni-channel messaging",
+    "industry": "B2B",
+    "industries": [
+      "B2B",
+      "Marketing"
+    ],
+    "location": "San Francisco, CA, USA",
+    "website": "https://onesignal.com",
+    "funding_round": null,
+    "source": {
+      "name": "YC OSS API (unofficial dataset derived from the YC directory)",
+      "dataset_url": "https://yc-oss.github.io/api/companies/all.json",
+      "company_url": "https://www.ycombinator.com/companies/onesignal",
+      "record_url": "https://yc-oss.github.io/api/batches/summer-2011/onesignal.json",
+      "yc_id": 76,
+      "yc_batch": "Summer 2011",
+      "status_at_retrieval": "Active",
+      "retrieved_at": "2026-11-09"
+    }
+  },
+  {
+    "id": "yc-549",
+    "name": "Panorama Education",
+    "description": "Improving education for every student.",
+    "industry": "Education",
+    "industries": [
+      "Education"
+    ],
+    "location": "Los Angeles, CA, USA",
+    "website": "https://www.panoramaed.com/",
+    "funding_round": null,
+    "source": {
+      "name": "YC OSS API (unofficial dataset derived from the YC directory)",
+      "dataset_url": "https://yc-oss.github.io/api/companies/all.json",
+      "company_url": "https://www.ycombinator.com/companies/panorama-education",
+      "record_url": "https://yc-oss.github.io/api/batches/summer-2013/panorama-education.json",
+      "yc_id": 549,
+      "yc_batch": "Summer 2013",
+      "status_at_retrieval": "Active",
+      "retrieved_at": "2026-11-09"
+    }
+  },
+  {
+    "id": "yc-52",
+    "name": "Per Vices",
+    "description": "Building Mission Critical Software Defined Radio products.",
+    "industry": "Industrials",
+    "industries": [
+      "Industrials"
+    ],
+    "location": "Toronto, ON, Canada",
+    "website": "https://www.pervices.com",
+    "funding_round": null,
+    "source": {
+      "name": "YC OSS API (unofficial dataset derived from the YC directory)",
+      "dataset_url": "https://yc-oss.github.io/api/companies/all.json",
+      "company_url": "https://www.ycombinator.com/companies/per-vices",
+      "record_url": "https://yc-oss.github.io/api/batches/winter-2012/per-vices.json",
+      "yc_id": 52,
+      "yc_batch": "Winter 2012",
+      "status_at_retrieval": "Active",
+      "retrieved_at": "2026-11-09"
+    }
+  },
+  {
+    "id": "yc-85",
+    "name": "Quartzy",
+    "description": "Marketplace for life science supplies.",
+    "industry": "Healthcare",
+    "industries": [
+      "Healthcare",
+      "Healthcare IT"
+    ],
+    "location": "San Francisco, CA, USA; Hayward, CA, USA",
+    "website": "https://www.quartzy.com",
+    "funding_round": null,
+    "source": {
+      "name": "YC OSS API (unofficial dataset derived from the YC directory)",
+      "dataset_url": "https://yc-oss.github.io/api/companies/all.json",
+      "company_url": "https://www.ycombinator.com/companies/quartzy",
+      "record_url": "https://yc-oss.github.io/api/batches/summer-2011/quartzy.json",
+      "yc_id": 85,
+      "yc_batch": "Summer 2011",
+      "status_at_retrieval": "Active",
+      "retrieved_at": "2026-11-09"
+    }
+  },
+  {
+    "id": "yc-181",
+    "name": "Recurse Center",
+    "description": "The retreat where curious programmers recharge and grow",
+    "industry": "Education",
+    "industries": [
+      "Education"
+    ],
+    "location": "New York City, NY, USA",
+    "website": "https://www.recurse.com",
+    "funding_round": null,
+    "source": {
+      "name": "YC OSS API (unofficial dataset derived from the YC directory)",
+      "dataset_url": "https://yc-oss.github.io/api/companies/all.json",
+      "company_url": "https://www.ycombinator.com/companies/recurse-center",
+      "record_url": "https://yc-oss.github.io/api/batches/summer-2010/recurse-center.json",
+      "yc_id": 181,
+      "yc_batch": "Summer 2010",
+      "status_at_retrieval": "Active",
+      "retrieved_at": "2026-11-09"
+    }
+  },
+  {
+    "id": "yc-258",
+    "name": "RentHop",
+    "description": "Apartment rental marketplace",
+    "industry": "Real Estate and Construction",
+    "industries": [
+      "Real Estate and Construction",
+      "Housing and Real Estate"
+    ],
+    "location": "New York City, NY, USA; New York, NY, USA",
+    "website": "http://renthop.com",
+    "funding_round": null,
+    "source": {
+      "name": "YC OSS API (unofficial dataset derived from the YC directory)",
+      "dataset_url": "https://yc-oss.github.io/api/companies/all.json",
+      "company_url": "https://www.ycombinator.com/companies/renthop",
+      "record_url": "https://yc-oss.github.io/api/batches/summer-2009/renthop.json",
+      "yc_id": 258,
+      "yc_batch": "Summer 2009",
+      "status_at_retrieval": "Active",
+      "retrieved_at": "2026-11-09"
+    }
+  },
+  {
+    "id": "yc-19",
+    "name": "Rescale",
+    "description": "High Performance Computing Built for the Cloud",
+    "industry": "B2B",
+    "industries": [
+      "B2B",
+      "Engineering, Product and Design"
+    ],
+    "location": "San Francisco, CA, USA",
+    "website": "https://rescale.com",
+    "funding_round": null,
+    "source": {
+      "name": "YC OSS API (unofficial dataset derived from the YC directory)",
+      "dataset_url": "https://yc-oss.github.io/api/companies/all.json",
+      "company_url": "https://www.ycombinator.com/companies/rescale",
+      "record_url": "https://yc-oss.github.io/api/batches/winter-2012/rescale.json",
+      "yc_id": 19,
+      "yc_batch": "Winter 2012",
+      "status_at_retrieval": "Active",
+      "retrieved_at": "2026-11-09"
+    }
+  },
+  {
+    "id": "yc-35",
+    "name": "Screenleap",
+    "description": "One-click screen sharing with installation-free viewing on all devices",
+    "industry": "B2B",
+    "industries": [
+      "B2B",
+      "Productivity"
+    ],
+    "location": "San Francisco, CA, USA; San Carlos, CA, USA; Remote",
+    "website": "https://screenleap.com",
+    "funding_round": null,
+    "source": {
+      "name": "YC OSS API (unofficial dataset derived from the YC directory)",
+      "dataset_url": "https://yc-oss.github.io/api/companies/all.json",
+      "company_url": "https://www.ycombinator.com/companies/screenleap-inc",
+      "record_url": "https://yc-oss.github.io/api/batches/winter-2012/screenleap-inc.json",
+      "yc_id": 35,
+      "yc_batch": "Winter 2012",
+      "status_at_retrieval": "Active",
+      "retrieved_at": "2026-11-09"
+    }
+  },
+  {
+    "id": "yc-31",
+    "name": "Shoptiques",
+    "description": "Shoptiques.com lets you shop the world's best local boutiques online.",
+    "industry": "Consumer",
+    "industries": [
+      "Consumer",
+      "Apparel and Cosmetics"
+    ],
+    "location": "New York City, NY, USA; New York, NY, USA",
+    "website": "http://shoptiques.com",
+    "funding_round": null,
+    "source": {
+      "name": "YC OSS API (unofficial dataset derived from the YC directory)",
+      "dataset_url": "https://yc-oss.github.io/api/companies/all.json",
+      "company_url": "https://www.ycombinator.com/companies/shoptiques",
+      "record_url": "https://yc-oss.github.io/api/batches/winter-2012/shoptiques.json",
+      "yc_id": 31,
+      "yc_batch": "Winter 2012",
+      "status_at_retrieval": "Active",
+      "retrieved_at": "2026-11-09"
+    }
+  },
+  {
+    "id": "yc-102",
+    "name": "Sift",
+    "description": "The Leader in Digital Trust & Safety",
+    "industry": "B2B",
+    "industries": [
+      "B2B",
+      "Security"
+    ],
+    "location": "San Francisco, CA, USA",
+    "website": "https://sift.com/",
+    "funding_round": null,
+    "source": {
+      "name": "YC OSS API (unofficial dataset derived from the YC directory)",
+      "dataset_url": "https://yc-oss.github.io/api/companies/all.json",
+      "company_url": "https://www.ycombinator.com/companies/sift",
+      "record_url": "https://yc-oss.github.io/api/batches/summer-2011/sift.json",
+      "yc_id": 102,
+      "yc_batch": "Summer 2011",
+      "status_at_retrieval": "Active",
+      "retrieved_at": "2026-11-09"
+    }
+  },
+  {
+    "id": "yc-414",
+    "name": "SmartAsset",
+    "description": "Marketplace connecting consumers to financial advisors",
+    "industry": "Fintech",
+    "industries": [
+      "Fintech",
+      "Consumer Finance"
+    ],
+    "location": "Austin, TX, USA; Remote",
+    "website": "http://smartasset.com",
+    "funding_round": null,
+    "source": {
+      "name": "YC OSS API (unofficial dataset derived from the YC directory)",
+      "dataset_url": "https://yc-oss.github.io/api/companies/all.json",
+      "company_url": "https://www.ycombinator.com/companies/smartasset",
+      "record_url": "https://yc-oss.github.io/api/batches/summer-2012/smartasset.json",
+      "yc_id": 414,
+      "yc_batch": "Summer 2012",
+      "status_at_retrieval": "Active",
+      "retrieved_at": "2026-11-09"
+    }
+  },
+  {
+    "id": "yc-622",
+    "name": "Snapdocs",
+    "description": "digital mortgage closing",
+    "industry": "Real Estate and Construction",
+    "industries": [
+      "Real Estate and Construction",
+      "Housing and Real Estate"
+    ],
+    "location": "Portland, OR, USA; San Francisco, CA, USA",
+    "website": "http://snapdocs.com",
+    "funding_round": null,
+    "source": {
+      "name": "YC OSS API (unofficial dataset derived from the YC directory)",
+      "dataset_url": "https://yc-oss.github.io/api/companies/all.json",
+      "company_url": "https://www.ycombinator.com/companies/snapdocs",
+      "record_url": "https://yc-oss.github.io/api/batches/winter-2014/snapdocs.json",
+      "yc_id": 622,
+      "yc_batch": "Winter 2014",
+      "status_at_retrieval": "Active",
+      "retrieved_at": "2026-11-09"
+    }
+  },
+  {
+    "id": "yc-172",
+    "name": "Storyworth",
+    "description": "Record your family stories and print them in beautiful keepsake books.",
+    "industry": "Consumer",
+    "industries": [
+      "Consumer",
+      "Home and Personal"
+    ],
+    "location": "Kailua, HI, USA; Stockholm, Stockholm County, Sweden; Remote",
+    "website": "https://www.storyworth.com",
+    "funding_round": null,
+    "source": {
+      "name": "YC OSS API (unofficial dataset derived from the YC directory)",
+      "dataset_url": "https://yc-oss.github.io/api/companies/all.json",
+      "company_url": "https://www.ycombinator.com/companies/storyworth",
+      "record_url": "https://yc-oss.github.io/api/batches/winter-2011/storyworth.json",
+      "yc_id": 172,
+      "yc_batch": "Winter 2011",
+      "status_at_retrieval": "Active",
+      "retrieved_at": "2026-11-09"
+    }
+  },
+  {
+    "id": "yc-82",
+    "name": "Streak",
+    "description": "Streak transforms Gmail into a powerful CRM",
+    "industry": "B2B",
+    "industries": [
+      "B2B",
+      "Sales"
+    ],
+    "location": "San Francisco, CA, USA; Remote",
+    "website": "http://streak.com",
+    "funding_round": null,
+    "source": {
+      "name": "YC OSS API (unofficial dataset derived from the YC directory)",
+      "dataset_url": "https://yc-oss.github.io/api/companies/all.json",
+      "company_url": "https://www.ycombinator.com/companies/streak",
+      "record_url": "https://yc-oss.github.io/api/batches/summer-2011/streak.json",
+      "yc_id": 82,
+      "yc_batch": "Summer 2011",
+      "status_at_retrieval": "Active",
+      "retrieved_at": "2026-11-09"
+    }
+  },
+  {
+    "id": "yc-240",
+    "name": "Stripe",
+    "description": "Economic infrastructure for the internet.",
+    "industry": "Fintech",
+    "industries": [
+      "Fintech"
+    ],
+    "location": "San Francisco, CA, USA",
+    "website": "http://stripe.com",
+    "funding_round": null,
+    "source": {
+      "name": "YC OSS API (unofficial dataset derived from the YC directory)",
+      "dataset_url": "https://yc-oss.github.io/api/companies/all.json",
+      "company_url": "https://www.ycombinator.com/companies/stripe",
+      "record_url": "https://yc-oss.github.io/api/batches/summer-2009/stripe.json",
+      "yc_id": 240,
+      "yc_batch": "Summer 2009",
+      "status_at_retrieval": "Active",
+      "retrieved_at": "2026-11-09"
+    }
+  },
+  {
+    "id": "yc-896",
+    "name": "SunFarmer",
+    "description": "Reliable and affordable solar energy in developing countries.",
+    "industry": "Industrials",
+    "industries": [
+      "Industrials",
+      "Climate"
+    ],
+    "location": "Kathmandu, Central Development Region, Nepal",
+    "website": "http://sunfarmer.org",
+    "funding_round": null,
+    "source": {
+      "name": "YC OSS API (unofficial dataset derived from the YC directory)",
+      "dataset_url": "https://yc-oss.github.io/api/companies/all.json",
+      "company_url": "https://www.ycombinator.com/companies/sunfarmer",
+      "record_url": "https://yc-oss.github.io/api/batches/summer-2015/sunfarmer.json",
+      "yc_id": 896,
+      "yc_batch": "Summer 2015",
+      "status_at_retrieval": "Active",
+      "retrieved_at": "2026-11-09"
+    }
+  },
+  {
+    "id": "yc-1488",
+    "name": "Token Transit",
+    "description": "Complete fare payment platform for public transportation",
+    "industry": "Government",
+    "industries": [
+      "Government"
+    ],
+    "location": "San Francisco, CA, USA",
+    "website": "https://tokentransit.com",
+    "funding_round": null,
+    "source": {
+      "name": "YC OSS API (unofficial dataset derived from the YC directory)",
+      "dataset_url": "https://yc-oss.github.io/api/companies/all.json",
+      "company_url": "https://www.ycombinator.com/companies/token-transit",
+      "record_url": "https://yc-oss.github.io/api/batches/winter-2017/token-transit.json",
+      "yc_id": 1488,
+      "yc_batch": "Winter 2017",
+      "status_at_retrieval": "Active",
+      "retrieved_at": "2026-11-09"
+    }
+  },
+  {
+    "id": "yc-149",
+    "name": "Tremendous",
+    "description": "How businesses send money to people at scale. Fast, free, global.",
+    "industry": "Fintech",
+    "industries": [
+      "Fintech",
+      "Payments"
+    ],
+    "location": "New York City, NY, USA; Remote",
+    "website": "https://www.tremendous.com",
+    "funding_round": null,
+    "source": {
+      "name": "YC OSS API (unofficial dataset derived from the YC directory)",
+      "dataset_url": "https://yc-oss.github.io/api/companies/all.json",
+      "company_url": "https://www.ycombinator.com/companies/tremendous",
+      "record_url": "https://yc-oss.github.io/api/batches/winter-2011/tremendous.json",
+      "yc_id": 149,
+      "yc_batch": "Winter 2011",
+      "status_at_retrieval": "Active",
+      "retrieved_at": "2026-11-09"
+    }
+  },
+  {
+    "id": "yc-563",
+    "name": "True Link",
+    "description": "Financial Services for Financial Caregivers. ",
+    "industry": "Fintech",
+    "industries": [
+      "Fintech"
+    ],
+    "location": "New York City, NY, USA; San Francisco, CA, USA; Remote",
+    "website": "https://www.truelinkfinancial.com/",
+    "funding_round": null,
+    "source": {
+      "name": "YC OSS API (unofficial dataset derived from the YC directory)",
+      "dataset_url": "https://yc-oss.github.io/api/companies/all.json",
+      "company_url": "https://www.ycombinator.com/companies/true-link",
+      "record_url": "https://yc-oss.github.io/api/batches/summer-2013/true-link.json",
+      "yc_id": 563,
+      "yc_batch": "Summer 2013",
+      "status_at_retrieval": "Active",
+      "retrieved_at": "2026-11-09"
+    }
+  },
+  {
+    "id": "yc-503",
+    "name": "Wefunder",
+    "description": "We're Robinhood for pre-IPO startups. Everyone can invest $100.",
+    "industry": "Fintech",
+    "industries": [
+      "Fintech",
+      "Asset Management"
+    ],
+    "location": "San Francisco, CA, USA",
+    "website": "http://wefunder.com",
+    "funding_round": null,
+    "source": {
+      "name": "YC OSS API (unofficial dataset derived from the YC directory)",
+      "dataset_url": "https://yc-oss.github.io/api/companies/all.json",
+      "company_url": "https://www.ycombinator.com/companies/wefunder",
+      "record_url": "https://yc-oss.github.io/api/batches/winter-2013/wefunder.json",
+      "yc_id": 503,
+      "yc_batch": "Winter 2013",
+      "status_at_retrieval": "Active",
+      "retrieved_at": "2026-11-09"
+    }
+  },
+  {
+    "id": "yc-147",
+    "name": "You Got Listings",
+    "description": "All-in-one apartment Marketing Platform for brokerages and landlords.",
+    "industry": "Real Estate and Construction",
+    "industries": [
+      "Real Estate and Construction",
+      "Housing and Real Estate"
+    ],
+    "location": "Remote",
+    "website": "http://www.yougotlistings.com",
+    "funding_round": null,
+    "source": {
+      "name": "YC OSS API (unofficial dataset derived from the YC directory)",
+      "dataset_url": "https://yc-oss.github.io/api/companies/all.json",
+      "company_url": "https://www.ycombinator.com/companies/you-got-listings-inc",
+      "record_url": "https://yc-oss.github.io/api/batches/winter-2011/you-got-listings-inc.json",
+      "yc_id": 147,
+      "yc_batch": "Winter 2011",
+      "status_at_retrieval": "Active",
+      "retrieved_at": "2026-11-09"
+    }
+  },
+  {
+    "id": "yc-762",
+    "name": "Zeitview",
+    "description": "Inspection software for renewable energy & sustainable infrastructure",
+    "industry": "Industrials",
+    "industries": [
+      "Industrials",
+      "Drones"
+    ],
+    "location": "Los Angeles, CA, USA; Santa Monica, CA, USA; Remote",
+    "website": "https://www.zeitview.com/",
+    "funding_round": null,
+    "source": {
+      "name": "YC OSS API (unofficial dataset derived from the YC directory)",
+      "dataset_url": "https://yc-oss.github.io/api/companies/all.json",
+      "company_url": "https://www.ycombinator.com/companies/zeitview",
+      "record_url": "https://yc-oss.github.io/api/batches/winter-2015/zeitview.json",
+      "yc_id": 762,
+      "yc_batch": "Winter 2015",
+      "status_at_retrieval": "Active",
+      "retrieved_at": "2026-11-09"
+    }
+  },
+  {
+    "id": "yc-1096",
+    "name": "Zenysis",
+    "description": "Building powerful data analysis software for developing countries.",
+    "industry": "Government",
+    "industries": [
+      "Government"
+    ],
+    "location": "San Francisco, CA, USA",
+    "website": "http://www.zenysis.com",
+    "funding_round": null,
+    "source": {
+      "name": "YC OSS API (unofficial dataset derived from the YC directory)",
+      "dataset_url": "https://yc-oss.github.io/api/companies/all.json",
+      "company_url": "https://www.ycombinator.com/companies/zenysis",
+      "record_url": "https://yc-oss.github.io/api/batches/winter-2016/zenysis.json",
+      "yc_id": 1096,
+      "yc_batch": "Winter 2016",
+      "status_at_retrieval": "Active",
+      "retrieved_at": "2026-11-09"
+    }
+  },
+  {
+    "id": "yc-633",
+    "name": "Zidisha",
+    "description": "Direct P2P lending across the international wealth divide.",
+    "industry": "Fintech",
+    "industries": [
+      "Fintech",
+      "Credit and Lending"
+    ],
+    "location": "Sterling, VA, USA; Remote",
+    "website": "https://www.zidisha.org",
+    "funding_round": null,
+    "source": {
+      "name": "YC OSS API (unofficial dataset derived from the YC directory)",
+      "dataset_url": "https://yc-oss.github.io/api/companies/all.json",
+      "company_url": "https://www.ycombinator.com/companies/zidisha",
+      "record_url": "https://yc-oss.github.io/api/batches/winter-2014/zidisha.json",
+      "yc_id": 633,
+      "yc_batch": "Winter 2014",
+      "status_at_retrieval": "Active",
+      "retrieved_at": "2026-11-09"
+    }
+  }
+]
