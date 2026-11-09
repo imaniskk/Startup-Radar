@@ -5,6 +5,7 @@ import { apiRequest } from "../lib/api";
 import useAccountList from "../lib/useAccountList";
 import { EntryContent } from "../components/CareerEntries";
 import SavedStartups from "../components/SavedStartups";
+import applicantAvatar from "../assets/applicant-creature-avatar.png";
 import "./ProfilePage.css";
 
 function PersonalInterests({ token }) {
@@ -42,15 +43,12 @@ export default function PublicProfilePage() {
     if (url.protocol === "https:" && !url.username && !url.password && (url.hostname === "linkedin.com" || url.hostname.endsWith(".linkedin.com"))) linkedIn = url.href;
   } catch { /* Missing or invalid legacy URL. */ }
   const name = profile?.name || "Candidate profile";
-  const initials = name.split(/\s+/).filter(Boolean).slice(0, 2).map((part) => part[0]).join("").toUpperCase();
   return (
     <main className="profile-page">
       <div className="profile-breadcrumb"><Link to="/">← Discover startups</Link><span>{ownProfile ? "Your corner of Startup Radar" : "Candidate profile"}</span></div>
       <section className="profile-hero" aria-label="Candidate introduction">
-        <div className="profile-cover" aria-hidden="true"><span>Find your next beginning.</span><span className="cover-heart">♡</span></div>
         <div className="profile-intro">
-          <div className="profile-avatar" aria-hidden="true">{profile ? initials : "♡"}</div>
-          {ownProfile && <Link className="account-button account-button-secondary profile-edit-button" to="/account/edit">Edit profile & account</Link>}
+          <div className="profile-avatar"><img src={applicantAvatar} alt="Default applicant avatar: cartoon axolotl tech founder" width="90" height="90" /></div>
           {error ? <div role="alert"><p>{error}</p><button onClick={() => setAttempt((n) => n + 1)}>Try again</button></div> : !profile ? <p role="status">Loading candidate profile…</p> : <>
             <div className="profile-summary">
               <div className="profile-identity">
@@ -61,6 +59,7 @@ export default function PublicProfilePage() {
                   {profile.phone && <span>{profile.phone}</span>}
                   {linkedIn && <a href={linkedIn} target="_blank" rel="noreferrer">LinkedIn ↗</a>}
                 </div>
+                {ownProfile && <Link className="account-button account-button-secondary profile-edit-button" to="/account/edit">Edit profile & account</Link>}
               </div>
               {(profile.bio || ownProfile) && <div className="profile-about">
                 <h2>About</h2>

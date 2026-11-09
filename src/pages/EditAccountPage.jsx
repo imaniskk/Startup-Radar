@@ -55,7 +55,7 @@ export default function EditAccountPage() {
   const { user, session, loading, error } = useAuth();
   if (!loading && !error && !user) return <Navigate to="/login" replace />;
   return (
-    <AccountCard title="Edit your profile" description="Keep your personal details and preferences up to date.">
+    <AccountCard className="edit-account-card" title="Edit your profile" description="Keep your personal details and preferences up to date.">
       <AuthStatus />
       {!loading && !error && user && <AccountDetails key={user.id} token={session.access_token} />}
     </AccountCard>

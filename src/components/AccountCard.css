@@ -45,3 +45,9 @@
 @media (max-width: 480px) {
   .login-card { margin: 28px auto; padding: 24px 20px; }
 }
+
+.login-card.edit-account-card {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 900px;
+}
