@@ -1,34 +1,12 @@
 import { useOutletContext } from "react-router-dom";
+import startups from "../data/startups_seed.json";
 import "./DiscoverPage.css";
 
-export default function DiscoverPage() {
-  const startups = [
-    {
-      id: 1,
-      name: "TechNova",
-      industry: "Technology",
-      location: "California",
-      seed_round: "Seed",
-      description: "Building innovative technology for the future.",
-    },
-    {
-      id: 2,
-      name: "HealthAI",
-      industry: "Healthcare",
-      location: "New York",
-      seed_round: "Series A",
-      description: "Making healthcare smarter and more accessible.",
-    },
-    {
-      id: 3,
-      name: "GreenFuture",
-      industry: "Climate Tech",
-      location: "Boston",
-      seed_round: "Pre-Seed",
-      description: "Creating sustainable solutions for a greener world.",
-    },
-  ];
+const industries = [...new Set(startups.map((startup) => startup.industry))].sort();
+const locations = [...new Set(startups.map((startup) => startup.location))].sort();
+const fundingRounds = [...new Set(startups.map((startup) => startup.funding_round).filter(Boolean))].sort();
 
+export default function DiscoverPage() {
   const {
     search,
     setSearch,
@@ -60,7 +38,7 @@ export default function DiscoverPage() {
 
     const matchesStage =
       selectedStage === "All" ||
-      startup.seed_round === selectedStage;
+      (startup.funding_round ?? "Not verified") === selectedStage;
 
     const matchesSaved =
       !showSaved || savedStartups.includes(startup.id);
@@ -92,6 +70,9 @@ export default function DiscoverPage() {
           <p className="discover-subtitle">
             Find startups that match your interests!
           </p>
+          <p className="discover-subtitle">
+            Preview data: 50 YC startups from a local fixture retrieved November 9, 2026.
+          </p>
         </header>
 
         {/* Search and filter section */}
@@ -118,9 +99,9 @@ export default function DiscoverPage() {
                 onChange={(e) => setSelectedIndustry(e.target.value)}
               >
                 <option value="All">All Industries</option>
-                <option value="Technology">Technology</option>
-                <option value="Healthcare">Healthcare</option>
-                <option value="Climate Tech">Climate Tech</option>
+                {industries.map((industry) => (
+                  <option key={industry} value={industry}>{industry}</option>
+                ))}
               </select>
             </div>
 
@@ -133,9 +114,9 @@ export default function DiscoverPage() {
                 onChange={(e) => setSelectedLocation(e.target.value)}
               >
                 <option value="All">All Locations</option>
-                <option value="California">California</option>
-                <option value="New York">New York</option>
-                <option value="Boston">Boston</option>
+                {locations.map((location) => (
+                  <option key={location} value={location}>{location}</option>
+                ))}
               </select>
             </div>
 
@@ -148,9 +129,12 @@ export default function DiscoverPage() {
                 onChange={(e) => setSelectedStage(e.target.value)}
               >
                 <option value="All">All Stages</option>
-                <option value="Pre-Seed">Pre-Seed</option>
-                <option value="Seed">Seed</option>
-                <option value="Series A">Series A</option>
+                {fundingRounds.map((round) => (
+                  <option key={round} value={round}>{round}</option>
+                ))}
+                {startups.some((startup) => !startup.funding_round) && (
+                  <option value="Not verified">Not verified</option>
+                )}
               </select>
             </div>
           </div>
@@ -196,7 +180,7 @@ export default function DiscoverPage() {
                 </span>
 
                 <p>📍 {startup.location}</p>
-                <p>🚀 Funding Stage: {startup.seed_round}</p>
+                <p>🚀 Funding Stage: {startup.funding_round ?? "Not verified"}</p>
 
                 <div className="startup-card-actions">
                   <button
