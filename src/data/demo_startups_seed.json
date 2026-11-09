@@ -1,0 +1,452 @@
+[
+  {
+    "startup_id": "e9936adc-553a-5b77-84ba-1834a7179480",
+    "is_demo": true,
+    "name": "[DEMO] Cloud Sprout",
+    "description": "[DEMO] A fictional cloud workspace for student project teams. Created for the COMPSCI 316 project; not a real employer.",
+    "location": "Durham, NC, USA (demo)",
+    "funding_round": null,
+    "website": null,
+    "industry": "B2B",
+    "jobs": [
+      {
+        "job_id": "516f1866-a756-58bf-8bce-8fb3694d292e",
+        "startup_id": "e9936adc-553a-5b77-84ba-1834a7179480",
+        "title": "Software Engineering Intern",
+        "description": "[DEMO] Fictional internship for the COMPSCI 316 project. Practice collaborating on sample software engineering tasks. This is not a real opening and accepts no real applications.",
+        "location": "Remote (demo)",
+        "status": "open",
+        "date_posted": null,
+        "application_url": null,
+        "application_deadline": null
+      },
+      {
+        "job_id": "beeb4f27-4ad7-56bf-9616-85da66affb4e",
+        "startup_id": "e9936adc-553a-5b77-84ba-1834a7179480",
+        "title": "Data Engineering Intern",
+        "description": "[DEMO] Fictional internship for the COMPSCI 316 project. Practice collaborating on sample data engineering tasks. This is not a real opening and accepts no real applications.",
+        "location": "Remote (demo)",
+        "status": "open",
+        "date_posted": null,
+        "application_url": null,
+        "application_deadline": null
+      },
+      {
+        "job_id": "ca703b15-a9a2-5c2e-add3-5b43049c1455",
+        "startup_id": "e9936adc-553a-5b77-84ba-1834a7179480",
+        "title": "Product Management Intern",
+        "description": "[DEMO] Fictional internship for the COMPSCI 316 project. Practice collaborating on sample product management tasks. This is not a real opening and accepts no real applications.",
+        "location": "Remote (demo)",
+        "status": "open",
+        "date_posted": null,
+        "application_url": null,
+        "application_deadline": null
+      }
+    ]
+  },
+  {
+    "startup_id": "5555b74b-0fcc-5cd2-b924-e943ede6b690",
+    "is_demo": true,
+    "name": "[DEMO] Data Grove",
+    "description": "[DEMO] A fictional platform for learning data pipeline development. Created for the COMPSCI 316 project; not a real employer.",
+    "location": "Durham, NC, USA (demo)",
+    "funding_round": null,
+    "website": null,
+    "industry": "B2B",
+    "jobs": [
+      {
+        "job_id": "b16d22f3-ffa3-58ff-b849-e8a7ae0c5fff",
+        "startup_id": "5555b74b-0fcc-5cd2-b924-e943ede6b690",
+        "title": "Data Engineering Intern",
+        "description": "[DEMO] Fictional internship for the COMPSCI 316 project. Practice collaborating on sample data engineering tasks. This is not a real opening and accepts no real applications.",
+        "location": "Remote (demo)",
+        "status": "open",
+        "date_posted": null,
+        "application_url": null,
+        "application_deadline": null
+      },
+      {
+        "job_id": "52ddb836-05d4-5302-b0bd-ae61f4479ef0",
+        "startup_id": "5555b74b-0fcc-5cd2-b924-e943ede6b690",
+        "title": "Product Management Intern",
+        "description": "[DEMO] Fictional internship for the COMPSCI 316 project. Practice collaborating on sample product management tasks. This is not a real opening and accepts no real applications.",
+        "location": "Remote (demo)",
+        "status": "open",
+        "date_posted": null,
+        "application_url": null,
+        "application_deadline": null
+      },
+      {
+        "job_id": "20bf0d5d-9786-5388-b3fa-3d2d06f739df",
+        "startup_id": "5555b74b-0fcc-5cd2-b924-e943ede6b690",
+        "title": "UX Design Intern",
+        "description": "[DEMO] Fictional internship for the COMPSCI 316 project. Practice collaborating on sample ux design tasks. This is not a real opening and accepts no real applications.",
+        "location": "Remote (demo)",
+        "status": "open",
+        "date_posted": null,
+        "application_url": null,
+        "application_deadline": null
+      }
+    ]
+  },
+  {
+    "startup_id": "f25e198c-f3d1-573c-8d7f-781c24e26ccd",
+    "is_demo": true,
+    "name": "[DEMO] Campus Compass",
+    "description": "[DEMO] A fictional tool for organizing campus learning resources. Created for the COMPSCI 316 project; not a real employer.",
+    "location": "Durham, NC, USA (demo)",
+    "funding_round": null,
+    "website": null,
+    "industry": "Education",
+    "jobs": [
+      {
+        "job_id": "086bb03e-bb3a-5693-9f0b-8472e67045a1",
+        "startup_id": "f25e198c-f3d1-573c-8d7f-781c24e26ccd",
+        "title": "Product Management Intern",
+        "description": "[DEMO] Fictional internship for the COMPSCI 316 project. Practice collaborating on sample product management tasks. This is not a real opening and accepts no real applications.",
+        "location": "Remote (demo)",
+        "status": "open",
+        "date_posted": null,
+        "application_url": null,
+        "application_deadline": null
+      },
+      {
+        "job_id": "93bf3565-3805-56ec-986d-7dc043d3ca45",
+        "startup_id": "f25e198c-f3d1-573c-8d7f-781c24e26ccd",
+        "title": "UX Design Intern",
+        "description": "[DEMO] Fictional internship for the COMPSCI 316 project. Practice collaborating on sample ux design tasks. This is not a real opening and accepts no real applications.",
+        "location": "Remote (demo)",
+        "status": "open",
+        "date_posted": null,
+        "application_url": null,
+        "application_deadline": null
+      },
+      {
+        "job_id": "9b84ccde-d175-50b6-b44b-8853297d035e",
+        "startup_id": "f25e198c-f3d1-573c-8d7f-781c24e26ccd",
+        "title": "QA Engineering Intern",
+        "description": "[DEMO] Fictional internship for the COMPSCI 316 project. Practice collaborating on sample qa engineering tasks. This is not a real opening and accepts no real applications.",
+        "location": "Remote (demo)",
+        "status": "open",
+        "date_posted": null,
+        "application_url": null,
+        "application_deadline": null
+      }
+    ]
+  },
+  {
+    "startup_id": "c56619f8-4d14-5d99-9338-d011ae60d918",
+    "is_demo": true,
+    "name": "[DEMO] Green Grid",
+    "description": "[DEMO] A fictional dashboard for exploring energy-use patterns. Created for the COMPSCI 316 project; not a real employer.",
+    "location": "Durham, NC, USA (demo)",
+    "funding_round": null,
+    "website": null,
+    "industry": "Industrials",
+    "jobs": [
+      {
+        "job_id": "d1f79bb0-132a-56b0-a8b1-3796c44d6803",
+        "startup_id": "c56619f8-4d14-5d99-9338-d011ae60d918",
+        "title": "UX Design Intern",
+        "description": "[DEMO] Fictional internship for the COMPSCI 316 project. Practice collaborating on sample ux design tasks. This is not a real opening and accepts no real applications.",
+        "location": "Remote (demo)",
+        "status": "open",
+        "date_posted": null,
+        "application_url": null,
+        "application_deadline": null
+      },
+      {
+        "job_id": "3788f6f6-8dd1-5460-b51b-2df90c5167e2",
+        "startup_id": "c56619f8-4d14-5d99-9338-d011ae60d918",
+        "title": "QA Engineering Intern",
+        "description": "[DEMO] Fictional internship for the COMPSCI 316 project. Practice collaborating on sample qa engineering tasks. This is not a real opening and accepts no real applications.",
+        "location": "Remote (demo)",
+        "status": "open",
+        "date_posted": null,
+        "application_url": null,
+        "application_deadline": null
+      },
+      {
+        "job_id": "8a07f5db-ec4f-5d09-b515-d71a8d7cc26b",
+        "startup_id": "c56619f8-4d14-5d99-9338-d011ae60d918",
+        "title": "Data Science Intern",
+        "description": "[DEMO] Fictional internship for the COMPSCI 316 project. Practice collaborating on sample data science tasks. This is not a real opening and accepts no real applications.",
+        "location": "Remote (demo)",
+        "status": "open",
+        "date_posted": null,
+        "application_url": null,
+        "application_deadline": null
+      }
+    ]
+  },
+  {
+    "startup_id": "691dce65-38cf-5a40-b291-05a8b23cd0f7",
+    "is_demo": true,
+    "name": "[DEMO] Care Lantern",
+    "description": "[DEMO] A fictional scheduling prototype for community health programs. Created for the COMPSCI 316 project; not a real employer.",
+    "location": "Durham, NC, USA (demo)",
+    "funding_round": null,
+    "website": null,
+    "industry": "Healthcare",
+    "jobs": [
+      {
+        "job_id": "9ae54e1b-0205-5f9c-9016-f65c988e57ec",
+        "startup_id": "691dce65-38cf-5a40-b291-05a8b23cd0f7",
+        "title": "QA Engineering Intern",
+        "description": "[DEMO] Fictional internship for the COMPSCI 316 project. Practice collaborating on sample qa engineering tasks. This is not a real opening and accepts no real applications.",
+        "location": "Remote (demo)",
+        "status": "open",
+        "date_posted": null,
+        "application_url": null,
+        "application_deadline": null
+      },
+      {
+        "job_id": "7a5238d8-052a-5984-9a21-5b0bf026040c",
+        "startup_id": "691dce65-38cf-5a40-b291-05a8b23cd0f7",
+        "title": "Data Science Intern",
+        "description": "[DEMO] Fictional internship for the COMPSCI 316 project. Practice collaborating on sample data science tasks. This is not a real opening and accepts no real applications.",
+        "location": "Remote (demo)",
+        "status": "open",
+        "date_posted": null,
+        "application_url": null,
+        "application_deadline": null
+      },
+      {
+        "job_id": "f79f8725-8360-57b6-a7de-07792f4d66af",
+        "startup_id": "691dce65-38cf-5a40-b291-05a8b23cd0f7",
+        "title": "Software Engineering Intern",
+        "description": "[DEMO] Fictional internship for the COMPSCI 316 project. Practice collaborating on sample software engineering tasks. This is not a real opening and accepts no real applications.",
+        "location": "Remote (demo)",
+        "status": "open",
+        "date_posted": null,
+        "application_url": null,
+        "application_deadline": null
+      }
+    ]
+  },
+  {
+    "startup_id": "5b985288-d533-5f9b-8f25-e50b55951d78",
+    "is_demo": true,
+    "name": "[DEMO] Penny Path",
+    "description": "[DEMO] A fictional budgeting learning app for students. Created for the COMPSCI 316 project; not a real employer.",
+    "location": "Durham, NC, USA (demo)",
+    "funding_round": null,
+    "website": null,
+    "industry": "Fintech",
+    "jobs": [
+      {
+        "job_id": "d15b217d-6a4e-5c5d-874c-3eb72d6ebc3b",
+        "startup_id": "5b985288-d533-5f9b-8f25-e50b55951d78",
+        "title": "Data Science Intern",
+        "description": "[DEMO] Fictional internship for the COMPSCI 316 project. Practice collaborating on sample data science tasks. This is not a real opening and accepts no real applications.",
+        "location": "Remote (demo)",
+        "status": "open",
+        "date_posted": null,
+        "application_url": null,
+        "application_deadline": null
+      },
+      {
+        "job_id": "42b5c15f-cbac-5728-93d2-754ec9c0a136",
+        "startup_id": "5b985288-d533-5f9b-8f25-e50b55951d78",
+        "title": "Software Engineering Intern",
+        "description": "[DEMO] Fictional internship for the COMPSCI 316 project. Practice collaborating on sample software engineering tasks. This is not a real opening and accepts no real applications.",
+        "location": "Remote (demo)",
+        "status": "open",
+        "date_posted": null,
+        "application_url": null,
+        "application_deadline": null
+      },
+      {
+        "job_id": "12ada040-9bfc-52ef-b9fa-8dc8844f8784",
+        "startup_id": "5b985288-d533-5f9b-8f25-e50b55951d78",
+        "title": "Data Engineering Intern",
+        "description": "[DEMO] Fictional internship for the COMPSCI 316 project. Practice collaborating on sample data engineering tasks. This is not a real opening and accepts no real applications.",
+        "location": "Remote (demo)",
+        "status": "open",
+        "date_posted": null,
+        "application_url": null,
+        "application_deadline": null
+      }
+    ]
+  },
+  {
+    "startup_id": "770f5f1d-a439-59d8-a841-192ae4e571de",
+    "is_demo": true,
+    "name": "[DEMO] Pixel Orchard",
+    "description": "[DEMO] A fictional collaborative design tool for hobby creators. Created for the COMPSCI 316 project; not a real employer.",
+    "location": "Durham, NC, USA (demo)",
+    "funding_round": null,
+    "website": null,
+    "industry": "Consumer",
+    "jobs": [
+      {
+        "job_id": "3d615a20-714f-593b-aa25-a80b1ce3796c",
+        "startup_id": "770f5f1d-a439-59d8-a841-192ae4e571de",
+        "title": "Software Engineering Intern",
+        "description": "[DEMO] Fictional internship for the COMPSCI 316 project. Practice collaborating on sample software engineering tasks. This is not a real opening and accepts no real applications.",
+        "location": "Remote (demo)",
+        "status": "open",
+        "date_posted": null,
+        "application_url": null,
+        "application_deadline": null
+      },
+      {
+        "job_id": "4d6effde-dadd-538f-8531-089feffb8797",
+        "startup_id": "770f5f1d-a439-59d8-a841-192ae4e571de",
+        "title": "Data Engineering Intern",
+        "description": "[DEMO] Fictional internship for the COMPSCI 316 project. Practice collaborating on sample data engineering tasks. This is not a real opening and accepts no real applications.",
+        "location": "Remote (demo)",
+        "status": "open",
+        "date_posted": null,
+        "application_url": null,
+        "application_deadline": null
+      },
+      {
+        "job_id": "ef6d379f-e2f5-5739-9b9a-debc16560e01",
+        "startup_id": "770f5f1d-a439-59d8-a841-192ae4e571de",
+        "title": "Product Management Intern",
+        "description": "[DEMO] Fictional internship for the COMPSCI 316 project. Practice collaborating on sample product management tasks. This is not a real opening and accepts no real applications.",
+        "location": "Remote (demo)",
+        "status": "open",
+        "date_posted": null,
+        "application_url": null,
+        "application_deadline": null
+      }
+    ]
+  },
+  {
+    "startup_id": "4223e848-eced-5439-b486-ca4d865fdf71",
+    "is_demo": true,
+    "name": "[DEMO] Civic Bridge",
+    "description": "[DEMO] A fictional prototype for finding community services. Created for the COMPSCI 316 project; not a real employer.",
+    "location": "Durham, NC, USA (demo)",
+    "funding_round": null,
+    "website": null,
+    "industry": "Government",
+    "jobs": [
+      {
+        "job_id": "9451e229-2351-5cd4-a70b-d44467d7b428",
+        "startup_id": "4223e848-eced-5439-b486-ca4d865fdf71",
+        "title": "Data Engineering Intern",
+        "description": "[DEMO] Fictional internship for the COMPSCI 316 project. Practice collaborating on sample data engineering tasks. This is not a real opening and accepts no real applications.",
+        "location": "Remote (demo)",
+        "status": "open",
+        "date_posted": null,
+        "application_url": null,
+        "application_deadline": null
+      },
+      {
+        "job_id": "215b7a4f-4f91-5b4e-ab20-e52f46e15678",
+        "startup_id": "4223e848-eced-5439-b486-ca4d865fdf71",
+        "title": "Product Management Intern",
+        "description": "[DEMO] Fictional internship for the COMPSCI 316 project. Practice collaborating on sample product management tasks. This is not a real opening and accepts no real applications.",
+        "location": "Remote (demo)",
+        "status": "open",
+        "date_posted": null,
+        "application_url": null,
+        "application_deadline": null
+      },
+      {
+        "job_id": "bd5f07b4-9093-5b68-a8d6-29990c3498b0",
+        "startup_id": "4223e848-eced-5439-b486-ca4d865fdf71",
+        "title": "UX Design Intern",
+        "description": "[DEMO] Fictional internship for the COMPSCI 316 project. Practice collaborating on sample ux design tasks. This is not a real opening and accepts no real applications.",
+        "location": "Remote (demo)",
+        "status": "open",
+        "date_posted": null,
+        "application_url": null,
+        "application_deadline": null
+      }
+    ]
+  },
+  {
+    "startup_id": "2f8366ca-4f34-5ea3-ac66-1c5c63209572",
+    "is_demo": true,
+    "name": "[DEMO] Build Nest",
+    "description": "[DEMO] A fictional workspace for planning building projects. Created for the COMPSCI 316 project; not a real employer.",
+    "location": "Durham, NC, USA (demo)",
+    "funding_round": null,
+    "website": null,
+    "industry": "Real Estate and Construction",
+    "jobs": [
+      {
+        "job_id": "0cd489fa-6569-5f16-9119-ad7e03e0ec17",
+        "startup_id": "2f8366ca-4f34-5ea3-ac66-1c5c63209572",
+        "title": "Product Management Intern",
+        "description": "[DEMO] Fictional internship for the COMPSCI 316 project. Practice collaborating on sample product management tasks. This is not a real opening and accepts no real applications.",
+        "location": "Remote (demo)",
+        "status": "open",
+        "date_posted": null,
+        "application_url": null,
+        "application_deadline": null
+      },
+      {
+        "job_id": "b9415343-105d-5d7a-82d9-97ff81d7e659",
+        "startup_id": "2f8366ca-4f34-5ea3-ac66-1c5c63209572",
+        "title": "UX Design Intern",
+        "description": "[DEMO] Fictional internship for the COMPSCI 316 project. Practice collaborating on sample ux design tasks. This is not a real opening and accepts no real applications.",
+        "location": "Remote (demo)",
+        "status": "open",
+        "date_posted": null,
+        "application_url": null,
+        "application_deadline": null
+      },
+      {
+        "job_id": "b32d6572-8113-51b2-84ac-a82aa3ee782c",
+        "startup_id": "2f8366ca-4f34-5ea3-ac66-1c5c63209572",
+        "title": "QA Engineering Intern",
+        "description": "[DEMO] Fictional internship for the COMPSCI 316 project. Practice collaborating on sample qa engineering tasks. This is not a real opening and accepts no real applications.",
+        "location": "Remote (demo)",
+        "status": "open",
+        "date_posted": null,
+        "application_url": null,
+        "application_deadline": null
+      }
+    ]
+  },
+  {
+    "startup_id": "57d18876-4b3c-5943-af07-eadb1ab4c212",
+    "is_demo": true,
+    "name": "[DEMO] Orbit Cart",
+    "description": "[DEMO] A fictional storefront builder for campus makers. Created for the COMPSCI 316 project; not a real employer.",
+    "location": "Durham, NC, USA (demo)",
+    "funding_round": null,
+    "website": null,
+    "industry": "Consumer",
+    "jobs": [
+      {
+        "job_id": "90985c60-5600-5e7d-976b-5039be146da9",
+        "startup_id": "57d18876-4b3c-5943-af07-eadb1ab4c212",
+        "title": "UX Design Intern",
+        "description": "[DEMO] Fictional internship for the COMPSCI 316 project. Practice collaborating on sample ux design tasks. This is not a real opening and accepts no real applications.",
+        "location": "Remote (demo)",
+        "status": "open",
+        "date_posted": null,
+        "application_url": null,
+        "application_deadline": null
+      },
+      {
+        "job_id": "da8dc010-5008-54a5-89d3-bab95ce98ed6",
+        "startup_id": "57d18876-4b3c-5943-af07-eadb1ab4c212",
+        "title": "QA Engineering Intern",
+        "description": "[DEMO] Fictional internship for the COMPSCI 316 project. Practice collaborating on sample qa engineering tasks. This is not a real opening and accepts no real applications.",
+        "location": "Remote (demo)",
+        "status": "open",
+        "date_posted": null,
+        "application_url": null,
+        "application_deadline": null
+      },
+      {
+        "job_id": "2fe666e6-f7e6-5343-9a82-b508d435983b",
+        "startup_id": "57d18876-4b3c-5943-af07-eadb1ab4c212",
+        "title": "Data Science Intern",
+        "description": "[DEMO] Fictional internship for the COMPSCI 316 project. Practice collaborating on sample data science tasks. This is not a real opening and accepts no real applications.",
+        "location": "Remote (demo)",
+        "status": "open",
+        "date_posted": null,
+        "application_url": null,
+        "application_deadline": null
+      }
+    ]
+  }
+]

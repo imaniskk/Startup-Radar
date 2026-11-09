@@ -1,0 +1,21 @@
+.startup-jobs { margin-top: 12px; }
+.view-jobs {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--accent);
+  border-radius: 10px;
+  background: white;
+  color: var(--heading-color);
+  font: bold 14px Arial, sans-serif;
+  cursor: pointer;
+}
+.view-jobs:focus-visible { outline: 3px solid var(--heading-color); outline-offset: 3px; }
+.jobs-panel { margin-top: 14px; overflow-wrap: anywhere; }
+.jobs-panel h3 { font-size: 18px; }
+.demo-notice, .demo-badge { color: var(--heading-color); background: var(--accent-soft); padding: 8px; border-radius: 8px; }
+.demo-badge { display: inline-block; margin-bottom: 8px; font-size: 13px; font-weight: bold; }
+.job-list { list-style: none; margin: 12px 0 0; padding: 0; }
+.job-listing { border-top: 1px solid var(--border); padding: 12px 0; }
+.job-listing h4 { margin: 0 0 8px; }
+.job-listing p { margin-bottom: 8px; }
+.job-listing a { color: var(--heading-color); }

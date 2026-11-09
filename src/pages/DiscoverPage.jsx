@@ -1,6 +1,7 @@
 import { useOutletContext } from "react-router-dom";
 import { useState, useEffect } from "react";
 import previewStartups from "../data/startups_seed.json";
+import StartupJobs from "../components/StartupJobs";
 import "./DiscoverPage.css";
 
 export default function DiscoverPage() {
@@ -69,7 +70,7 @@ export default function DiscoverPage() {
 
     const matchesIndustry =
       selectedIndustry === "All" ||
-      startup.industry === selectedIndustry;
+      (startup.industries ?? [startup.industry]).includes(selectedIndustry);
 
     const matchesLocation =
       selectedLocation === "All" ||
@@ -101,7 +102,7 @@ export default function DiscoverPage() {
   };
 
   // Build filter options from real startup data
-  const industries = [...new Set(startups.map((s) => s.industry).filter(Boolean))];
+  const industries = [...new Set(startups.flatMap((s) => s.industries ?? [s.industry]).filter(Boolean))].sort();
   const locations = [...new Set(startups.map((s) => s.location).filter(Boolean))];
   const stages = [...new Set(startups.map((s) => s.funding_round ?? "Not verified").filter(Boolean))];
 
@@ -254,6 +255,8 @@ export default function DiscoverPage() {
                     {startup.description}
                   </p>
 
+                  {startup.is_demo && <p className="demo-badge">Demo startup · Fictional jobs</p>}
+
                   <span className="startup-industry">
                     {startup.industry}
                   </span>
@@ -270,6 +273,9 @@ export default function DiscoverPage() {
                     >
                       {isSaved ? "♥ Saved!" : "♡ Save Startup"}
                     </button>
+                    {!usePreview && (
+                      <StartupJobs startupId={startup.id} startupName={startup.name} isDemo={Boolean(startup.is_demo)} />
+                    )}
                   </div>
                 </div>
               );
