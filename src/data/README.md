@@ -1,7 +1,10 @@
 # Startup directory fixture
 
 `startups_seed.json` is a temporary frontend fixture containing 50 real YC companies.
-It does not connect to or seed Supabase. `DiscoverPage.jsx` imports it directly.
+It does not connect to or seed Supabase. `DiscoverPage.jsx` imports it directly
+for the explicit "Use local YC preview data" option. By default, the page loads
+from the team's backend at `http://127.0.0.1:8000/startups`; a backend error does
+not silently substitute fixture records.
 
 ## Source and selection
 
@@ -38,5 +41,5 @@ alphabetically by company name.
 
 There are no job listings in this fixture. Any later mock jobs must be clearly
 identified as demonstration data. Before a database import, confirm defaults,
-constraints, UUID mapping, and industry relationships with the team. Before the
-API integration, replace the direct fixture import with the agreed data service.
+constraints, UUID mapping, and industry relationships with the team. The preview
+IDs stay local; backend records use `startup_id` for their display/save identity.
