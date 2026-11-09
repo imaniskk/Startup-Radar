@@ -30,3 +30,19 @@
 
 
 .login-form input:focus-visible { outline: 3px solid var(--heading-color); outline-offset: 3px; }
+
+.login-form fieldset {
+  display: flex;
+  flex-direction: column;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+}
+.login-form fieldset .login-message { margin: 0 0 16px; }
+.account-button:disabled { opacity: 0.6; cursor: wait; }
+.account-details { margin: 28px 0; }
+.account-details dt { font-weight: bold; margin-top: 16px; }
+.account-details dd { margin: 4px 0 0; overflow-wrap: anywhere; }
+.login-card a { color: var(--heading-color); }
+.login-card a.account-button-primary { color: white; }

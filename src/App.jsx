@@ -4,9 +4,16 @@ import AccountNavigation from "./components/AccountNavigation";
 import DiscoverPage from "./pages/DiscoverPage";
 import LoginPage from "./pages/LoginPage";
 import CreateAccountPage from "./pages/CreateAccountPage";
+import AccountPage from "./pages/AccountPage";
+import { AuthProvider, useAuth } from "./auth/AuthProvider";
 import "./App.css";
 
 function AppLayout() {
+  const { user } = useAuth();
+  return <AccountLayout key={user?.id || "guest"} />;
+}
+
+function AccountLayout() {
   // Search and filter states
   const [search, setSearch] = useState("");
   const [selectedIndustry, setSelectedIndustry] = useState("All");
@@ -40,15 +47,18 @@ function AppLayout() {
 
 export default function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route element={<AppLayout />}>
-          <Route index element={<DiscoverPage />} />
-          <Route path="login" element={<LoginPage />} />
-          <Route path="create-account" element={<CreateAccountPage />} />
-          <Route path="*" element={<main><h1>Page not found</h1><p>Use the navigation to continue.</p></main>} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
+    <AuthProvider>
+      <BrowserRouter>
+        <Routes>
+          <Route element={<AppLayout />}>
+            <Route index element={<DiscoverPage />} />
+            <Route path="account" element={<AccountPage />} />
+            <Route path="login" element={<LoginPage />} />
+            <Route path="create-account" element={<CreateAccountPage />} />
+            <Route path="*" element={<main><h1>Page not found</h1><p>Use the navigation to continue.</p></main>} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </AuthProvider>
   );
 }
