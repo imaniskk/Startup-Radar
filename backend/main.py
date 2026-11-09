@@ -11,6 +11,7 @@ from postgrest.exceptions import APIError
 from supabase_auth.errors import AuthApiError
 
 from database import public_auth_config, supabase, user_client
+from account_routes import register_account_routes
 
 app = FastAPI()
 logger = logging.getLogger(__name__)
@@ -57,7 +58,7 @@ def account_me(account=Depends(authenticated_account)):
     client, user = account
     try:
         profiles = client.table("user").select(
-            "user_id,email,name,location,phone,linkedin_url,created_at"
+            "user_id,email,name,location,phone,linkedin_url,created_at,bio"
         ).eq("user_id", str(user.id)).execute().data
         applicants = client.table("applicant").select(
             "user_id,default_resume_path"
@@ -78,11 +79,12 @@ def get_startups():
 class ProfileUpdate(BaseModel):
     model_config = ConfigDict(extra="forbid")
     name: str = Field(min_length=1, max_length=200)
+    bio: Optional[str] = Field(default=None, max_length=500)
     location: Optional[str] = Field(default=None, max_length=300)
     phone: Optional[str] = Field(default=None, max_length=50)
     linkedin_url: Optional[str] = Field(default=None, max_length=500)
 
-    @field_validator("name", "location", "phone", "linkedin_url", mode="before")
+    @field_validator("name", "bio", "location", "phone", "linkedin_url", mode="before")
     @classmethod
     def trim_fields(cls, value):
         return value.strip() if isinstance(value, str) else value
@@ -110,3 +112,6 @@ def update_profile(body: ProfileUpdate, account=Depends(authenticated_account)):
     if not rows:
         raise HTTPException(status_code=409, detail="Your profile is missing or cannot be updated.")
     return {"profile": rows[0]}
+
+
+register_account_routes(app, authenticated_account)

@@ -8,7 +8,7 @@ export default function ProfileForm({ profile, token, onSaved }) {
   async function submit(event) {
     event.preventDefault();
     const fields = new FormData(event.currentTarget);
-    const body = Object.fromEntries(["name", "location", "phone", "linkedin_url"].map((key) => [key, fields.get(key).trim()]));
+    const body = Object.fromEntries(["name", "bio", "location", "phone", "linkedin_url"].map((key) => [key, fields.get(key).trim()]));
     if (!body.name) { setFailed(true); setMessage("Please enter your name."); return; }
     setBusy(true); setMessage(""); setFailed(false);
     try {
@@ -23,11 +23,14 @@ export default function ProfileForm({ profile, token, onSaved }) {
   return (
     <section aria-labelledby="profile-heading">
       <h2 id="profile-heading">Profile details</h2>
-      <p>Your name, phone, and LinkedIn appear on your public candidate profile. Your location stays private.</p>
+      <p>Your name, bio, phone, and LinkedIn appear on your public candidate profile. Your location stays private.</p>
       <form className="login-form" onSubmit={submit}>
         <fieldset disabled={busy}>
           <label htmlFor="profile-name">Full name</label>
           <input id="profile-name" name="name" defaultValue={profile.name || ""} autoComplete="name" maxLength={200} required />
+          <label htmlFor="profile-bio">Short bio</label>
+          <textarea id="profile-bio" name="bio" defaultValue={profile.bio || ""} maxLength={500} rows={3} placeholder="A little about you, your interests, and what you hope to build next." />
+          <p className="profile-muted">Up to 500 characters · Public</p>
           <label htmlFor="profile-location">Location / address</label>
           <input id="profile-location" name="location" defaultValue={profile.location || ""} autoComplete="street-address" maxLength={300} />
           <label htmlFor="profile-phone">Phone</label>

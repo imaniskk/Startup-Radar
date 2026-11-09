@@ -1,9 +1,11 @@
-import { useOutletContext } from "react-router-dom";
+import { Link, useOutletContext } from "react-router-dom";
 import { useState, useEffect } from "react";
+import { useAuth } from "../auth/AuthProvider";
 import previewStartups from "../data/startups_seed.json";
 import "./DiscoverPage.css";
 
 export default function DiscoverPage() {
+  const { user } = useAuth();
   const [apiStartups, setApiStartups] = useState([]);
   const [usePreview, setUsePreview] = useState(false);
   const startups = usePreview ? previewStartups : apiStartups;
@@ -20,7 +22,11 @@ export default function DiscoverPage() {
     selectedStage,
     setSelectedStage,
     savedStartups,
-    setSavedStartups,
+    toggleSaved,
+    savedLoading,
+    savedError,
+    savingId,
+    retrySaved,
     showSaved,
     setShowSaved,
   } = useOutletContext();
@@ -90,15 +96,6 @@ export default function DiscoverPage() {
       matchesSaved
     );
   });
-
-  // Save or unsave a startup
-  const toggleSave = (id) => {
-    setSavedStartups((previous) =>
-      previous.includes(id)
-        ? previous.filter((savedId) => savedId !== id)
-        : [...previous, id]
-    );
-  };
 
   // Build filter options from real startup data
   const industries = [...new Set(startups.map((s) => s.industry).filter(Boolean))];
@@ -220,6 +217,9 @@ export default function DiscoverPage() {
         </button>
       </div>
 
+      {!user && <p className="login-message"><Link to="/login">Log in</Link> to save startups to your account.</p>}
+      {savedError && <div role="alert"><p>{savedError}</p><button onClick={retrySaved}>Retry saved startups</button></div>}
+      {usePreview && <p>Preview entries cannot be saved until they are imported into the team database.</p>}
       {!usePreview && loading && (
         <div className="empty-results">
           Loading startups...
@@ -264,11 +264,12 @@ export default function DiscoverPage() {
                   <div className="startup-card-actions">
                     <button
                       type="button"
-                      onClick={() => toggleSave(startup.id)}
+                      onClick={() => toggleSaved(startup.id)}
+                      disabled={!user || usePreview || savedLoading || savingId !== null}
                       className={`save-startup${isSaved ? " is-saved" : ""}`}
                       aria-pressed={isSaved}
                     >
-                      {isSaved ? "♥ Saved!" : "♡ Save Startup"}
+                      {usePreview ? "Preview only" : savingId === startup.id ? "Saving…" : isSaved ? "♥ Saved!" : "♡ Save Startup"}
                     </button>
                   </div>
                 </div>

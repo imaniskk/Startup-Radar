@@ -5,7 +5,10 @@ import DiscoverPage from "./pages/DiscoverPage";
 import LoginPage from "./pages/LoginPage";
 import CreateAccountPage from "./pages/CreateAccountPage";
 import AccountPage from "./pages/AccountPage";
+import EditAccountPage from "./pages/EditAccountPage";
 import { AuthProvider, useAuth } from "./auth/AuthProvider";
+import useSavedStartups from "./auth/useSavedStartups";
+import PublicProfilePage from "./pages/PublicProfilePage";
 import "./App.css";
 
 function AppLayout() {
@@ -14,12 +17,13 @@ function AppLayout() {
 }
 
 function AccountLayout() {
+  const { session } = useAuth();
+  const saves = useSavedStartups(session);
   // Search and filter states
   const [search, setSearch] = useState("");
   const [selectedIndustry, setSelectedIndustry] = useState("All");
   const [selectedLocation, setSelectedLocation] = useState("All");
   const [selectedStage, setSelectedStage] = useState("All");
-  const [savedStartups, setSavedStartups] = useState([]);
   const [showSaved, setShowSaved] = useState(false);
 
   return (
@@ -35,8 +39,7 @@ function AccountLayout() {
           setSelectedLocation,
           selectedStage,
           setSelectedStage,
-          savedStartups,
-          setSavedStartups,
+          ...saves,
           showSaved,
           setShowSaved,
         }} />
@@ -52,6 +55,8 @@ export default function App() {
         <Routes>
           <Route element={<AppLayout />}>
             <Route index element={<DiscoverPage />} />
+            <Route path="applicants/:userId" element={<PublicProfilePage />} />
+            <Route path="account/edit" element={<EditAccountPage />} />
             <Route path="account" element={<AccountPage />} />
             <Route path="login" element={<LoginPage />} />
             <Route path="create-account" element={<CreateAccountPage />} />
