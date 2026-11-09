@@ -3,6 +3,9 @@ import { Link, Navigate } from "react-router-dom";
 import { useAuth } from "../auth/AuthProvider";
 import AuthStatus from "../components/AuthStatus";
 import AccountCard from "../components/AccountCard";
+import ProfileForm from "../components/ProfileForm";
+import AccountSettings from "../components/AccountSettings";
+import "./LoginPage.css";
 import { apiRequest } from "../lib/api";
 
 function AccountDetails({ token }) {
@@ -28,7 +31,8 @@ function AccountDetails({ token }) {
         <dt>Email</dt><dd>{result.profile.email}</dd>
         <dt>Account ID</dt><dd>{result.profile.user_id}</dd>
       </dl>
-      <p>Your applicant account is connected.</p>
+      <ProfileForm profile={result.profile} token={token} onSaved={(profile) => setResult((current) => ({ ...current, profile }))} />
+      <AccountSettings />
       <Link className="account-button account-button-primary" to="/">Explore startups</Link>
     </>
   );

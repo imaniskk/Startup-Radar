@@ -1,4 +1,8 @@
 import logging
+from typing import Optional
+from urllib.parse import urlparse
+
+from pydantic import BaseModel, ConfigDict, Field, field_validator
 
 from fastapi import Depends, FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
@@ -69,3 +73,40 @@ def account_me(account=Depends(authenticated_account)):
 def get_startups():
     response = supabase.table("startup").select("*").execute()
     return response.data
+
+
+class ProfileUpdate(BaseModel):
+    model_config = ConfigDict(extra="forbid")
+    name: str = Field(min_length=1, max_length=200)
+    location: Optional[str] = Field(default=None, max_length=300)
+    phone: Optional[str] = Field(default=None, max_length=50)
+    linkedin_url: Optional[str] = Field(default=None, max_length=500)
+
+    @field_validator("name", "location", "phone", "linkedin_url", mode="before")
+    @classmethod
+    def trim_fields(cls, value):
+        return value.strip() if isinstance(value, str) else value
+
+    @field_validator("linkedin_url")
+    @classmethod
+    def valid_linkedin(cls, value):
+        if not value:
+            return None
+        parsed = urlparse(value)
+        host = (parsed.hostname or "").lower()
+        if parsed.scheme != "https" or not (host == "linkedin.com" or host.endswith(".linkedin.com")) or parsed.username or parsed.password:
+            raise ValueError("Use an https://linkedin.com profile URL.")
+        return value
+
+
+@app.patch("/account/me")
+def update_profile(body: ProfileUpdate, account=Depends(authenticated_account)):
+    client, user = account
+    changes = body.model_dump(exclude_unset=True)
+    try:
+        rows = client.table("user").update(changes).eq("user_id", str(user.id)).execute().data
+    except APIError:
+        raise HTTPException(status_code=503, detail="Unable to save your profile. Please try again.") from None
+    if not rows:
+        raise HTTPException(status_code=409, detail="Your profile is missing or cannot be updated.")
+    return {"profile": rows[0]}

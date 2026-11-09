@@ -46,3 +46,5 @@
 .account-details dd { margin: 4px 0 0; overflow-wrap: anywhere; }
 .login-card a { color: var(--heading-color); }
 .login-card a.account-button-primary { color: white; }
+
+.account-settings { margin: 32px 0; padding-top: 28px; border-top: 1px solid var(--border); }
