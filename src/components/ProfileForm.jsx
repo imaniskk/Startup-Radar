@@ -23,7 +23,7 @@ export default function ProfileForm({ profile, token, onSaved }) {
   return (
     <section aria-labelledby="profile-heading">
       <h2 id="profile-heading">Profile details</h2>
-      <p>Your name, bio, phone, and LinkedIn appear on your public candidate profile. Your location stays private.</p>
+      <p>Your name, bio, phone, and LinkedIn appear on your public profile. Your location stays private.</p>
       <form className="login-form" onSubmit={submit}>
         <fieldset disabled={busy}>
           <label htmlFor="profile-name">Full name</label>

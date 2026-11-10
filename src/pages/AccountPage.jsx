@@ -8,11 +8,7 @@ export default function AccountPage() {
   if (loading || error) return <AuthStatus />;
   if (!user) return <Navigate to="/login" replace />;
   if (user.user_metadata?.account_type === "founder") {
-    return (
-      <AccountCard title="Your founder account" description="Create job openings and review applications from your dashboard.">
-        <Link className="account-button account-button-primary" to="/founder/jobs">Manage job openings</Link>
-      </AccountCard>
-    );
+    return <Navigate to={`/founders/${user.id}`} replace />;
   }
   return <Navigate to={`/applicants/${user.id}`} replace />;
 }

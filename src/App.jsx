@@ -9,6 +9,7 @@ import EditAccountPage from "./pages/EditAccountPage";
 import { AuthProvider, useAuth } from "./auth/AuthProvider";
 import useSavedStartups from "./auth/useSavedStartups";
 import PublicProfilePage from "./pages/PublicProfilePage";
+import FounderProfilePage from "./pages/FounderProfilePage";
 import JobsPage from "./pages/JobsPage";
 import JobOpeningPage from "./pages/JobOpeningPage";
 import ApplicationsPage from "./pages/ApplicationsPage";
@@ -64,6 +65,7 @@ export default function App() {
             <Route path="applications" element={<ApplicationsPage />} />
             <Route path="founder/jobs" element={<FounderJobsPage />} />
             <Route path="applicants/:userId" element={<PublicProfilePage />} />
+            <Route path="founders/:userId" element={<FounderProfilePage />} />
             <Route path="account/edit" element={<EditAccountPage />} />
             <Route path="account" element={<AccountPage />} />
             <Route path="login" element={<LoginPage />} />

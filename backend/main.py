@@ -12,6 +12,7 @@ from supabase_auth.errors import AuthApiError
 
 from database import public_auth_config, supabase, user_client
 from account_routes import register_account_routes
+from founder_routes import register_founder_routes
 from job_routes import register_job_routes
 
 app = FastAPI()
@@ -120,4 +121,5 @@ def update_profile(body: ProfileUpdate, account=Depends(authenticated_account)):
 
 
 register_account_routes(app, authenticated_account)
+register_founder_routes(app, authenticated_account)
 register_job_routes(app, authenticated_account)

@@ -25,7 +25,7 @@ export default function AccountNavigation() {
           ) : (
             <Link className="account-button account-button-secondary" to="/applications">Applications</Link>
           )}
-          <Link className="account-button account-button-secondary" to={user.user_metadata?.account_type === "founder" ? "/account" : `/applicants/${user.id}`}>My account</Link>
+          <Link className="account-button account-button-secondary" to="/account">My account</Link>
           <button className="account-button account-button-primary" onClick={logout} disabled={busy}>{busy ? "Logging out…" : "Log out"}</button>
         </>
       ) : (
