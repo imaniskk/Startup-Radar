@@ -58,16 +58,20 @@ def account_me(account=Depends(authenticated_account)):
     client, user = account
     try:
         profiles = client.table("user").select(
-            "user_id,email,name,location,phone,linkedin_url,created_at,bio"
+            "user_id,email,name,location,phone,linkedin_url,created_at,bio,account_type"
         ).eq("user_id", str(user.id)).execute().data
-        applicants = client.table("applicant").select(
-            "user_id,default_resume_path"
-        ).eq("user_id", str(user.id)).execute().data
+        if not profiles:
+            raise HTTPException(status_code=409, detail="Your profile is missing. Check the registration trigger in Supabase.")
+        account_type = profiles[0]["account_type"]
+        if account_type == "founder":
+            rows = client.table("founder").select("user_id").eq("user_id", str(user.id)).execute().data
+        else:
+            rows = client.table("applicant").select("user_id,default_resume_path").eq("user_id", str(user.id)).execute().data
     except APIError:
         raise HTTPException(status_code=503, detail="Unable to load your account. Check the account migration and access policies.") from None
-    if not profiles or not applicants:
-        raise HTTPException(status_code=409, detail="Your applicant profile is missing. Check the registration trigger in Supabase.")
-    return {"profile": profiles[0], "applicant": applicants[0]}
+    if not rows:
+        raise HTTPException(status_code=409, detail=f"Your {account_type} profile is missing. Check the registration trigger in Supabase.")
+    return {"profile": profiles[0], "account_type": account_type, account_type: rows[0]}
 
 
 @app.get("/startups")

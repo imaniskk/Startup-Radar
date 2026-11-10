@@ -7,6 +7,7 @@ import "./LoginPage.css";
 
 export default function CreateAccountPage() {
   const { client, user, loading, error } = useAuth();
+  const [accountType, setAccountType] = useState("applicant");
   const [message, setMessage] = useState("");
   const [busy, setBusy] = useState(false);
   const [sent, setSent] = useState(false);
@@ -27,7 +28,7 @@ export default function CreateAccountPage() {
       const { data, error: signupError } = await client.auth.signUp({
         email: fields.get("email").trim(), password: fields.get("password"),
         options: {
-          data: { name: fields.get("name").trim() },
+          data: { name: fields.get("name").trim(), account_type: accountType },
           emailRedirectTo: `${window.location.origin}/account`,
         },
       });
@@ -47,6 +48,19 @@ export default function CreateAccountPage() {
       <AuthStatus />
       <form className="login-form" onSubmit={submit}>
         <fieldset disabled={loading || !!error || busy || sent}>
+          <fieldset className="account-type-choice">
+            <legend>I'm signing up as...</legend>
+            <label>
+              <input type="radio" name="accountType" value="applicant"
+              checked={accountType === "applicant"} onChange={() => setAccountType("applicant")} />
+              An applicant looking for a startup role
+            </label>
+            <label>
+              <input type="radio" name="accountType" value="founder"
+              checked={accountType === "founder"} onChange={() => setAccountType("founder")} />
+              A founder hiring for my startup
+            </label>
+          </fieldset>
           <label htmlFor="name">Full name</label>
           <input id="name" name="name" autoComplete="name" maxLength={200} required />
           <label htmlFor="email">Email</label>
@@ -55,7 +69,12 @@ export default function CreateAccountPage() {
           <input id="password" name="password" type="password" autoComplete="new-password" minLength={8} required />
           <label htmlFor="confirmPassword">Confirm password</label>
           <input id="confirmPassword" name="confirmPassword" type="password" autoComplete="new-password" minLength={8} required />
-          <p className="login-message">Use at least 8 characters. Your name and email appear on your public candidate profile.</p>
+          <p className="login-message">
+            Use at least 8 characters.{" "} 
+            {accountType === "founder"
+            ? "Your name and email appear on your public founder page."
+            : "Your name and email appear on your public candidate profile."}
+          </p>
           <button className="account-button account-button-primary" type="submit">{busy ? "Creating account…" : "Create account"}</button>
         </fieldset>
         {message && <p className="login-message" role={sent ? "status" : "alert"}>{message}</p>}

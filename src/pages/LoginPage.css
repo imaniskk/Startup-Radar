@@ -39,6 +39,9 @@
   padding: 0;
   min-width: 0;
 }
+.account-type-choice legend { font-weight: bold; margin-bottom: 10px; }
+.account-type-choice label { display: flex; align-items: center; gap: 8px; margin-bottom: 12px; cursor: pointer; }
+.login-form .account-type-choice input { width: auto; margin: 0; }
 .login-form fieldset .login-message { margin: 0 0 16px; }
 .account-button:disabled { opacity: 0.6; cursor: wait; }
 .account-details { margin: 28px 0; }
