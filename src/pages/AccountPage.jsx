@@ -28,7 +28,7 @@ function AccountDetails({ token }) {
         <dt>Email</dt><dd>{result.profile.email}</dd>
         <dt>Account ID</dt><dd>{result.profile.user_id}</dd>
       </dl>
-      <p>Your applicant account is connected.</p>
+      <p>Your {result.account_type} account is connected.</p>
       <Link className="account-button account-button-primary" to="/">Explore startups</Link>
     </>
   );
