@@ -49,3 +49,20 @@
 .account-details dd { margin: 4px 0 0; overflow-wrap: anywhere; }
 .login-card a { color: var(--heading-color); }
 .login-card a.account-button-primary { color: white; }
+
+.account-settings { margin: 32px 0; padding-top: 28px; border-top: 1px solid var(--border); }
+
+.account-section { margin-top: 32px; padding-top: 24px; border-top: 1px solid var(--border); }
+.account-section h2 { margin-bottom: 12px; }
+.account-list { list-style: none; padding: 0; }
+.account-list li { padding: 16px 0; border-bottom: 1px solid var(--border); overflow-wrap: anywhere; }
+.account-list h3 { margin: 0 0 8px; }
+.entry-actions { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; margin-top: 12px; }
+.entry-description { white-space: pre-wrap; }
+.interest-options { margin: 16px 0; border: 1px solid var(--border); border-radius: 10px; }
+.interest-options label { display: block; padding: 8px 0; }
+.login-form textarea { box-sizing: border-box; width: 100%; margin: 7px 0 20px; padding: 12px; border: 1px solid var(--input-border); border-radius: 10px; font: inherit; color: var(--text-primary); background: white; resize: vertical; }
+.login-form .current-role { display: flex; gap: 8px; align-items: center; margin: 12px 0; }
+.login-form .current-role input { width: auto; margin: 0; }
+.public-profile { max-width: 680px; }
+.save-startup:disabled { opacity: .6; cursor: default; }
