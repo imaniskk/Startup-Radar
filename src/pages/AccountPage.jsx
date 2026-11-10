@@ -8,11 +8,7 @@ export default function AccountPage() {
   if (loading || error) return <AuthStatus />;
   if (!user) return <Navigate to="/login" replace />;
   if (user.user_metadata?.account_type === "founder") {
-    return (
-      <AccountCard title="Your founder account" description="Founder tools are coming soon.">
-        <Link className="account-button account-button-primary" to="/">Explore startups</Link>
-      </AccountCard>
-    );
+    return <Navigate to={`/founders/${user.id}`} replace />;
   }
   return <Navigate to={`/applicants/${user.id}`} replace />;
 }

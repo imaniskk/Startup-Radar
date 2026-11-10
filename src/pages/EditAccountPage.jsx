@@ -39,11 +39,13 @@ function AccountDetails({ token }) {
         <dt>Email</dt><dd>{result.profile.email}</dd>
         <dt>Account ID</dt><dd>{result.profile.user_id}</dd>
       </dl>
-      <p className="login-message"><Link to={`/applicants/${result.profile.user_id}`}>← Back to your profile</Link></p>
+      <p className="login-message"><Link to="/account"> ← Back to your profile</Link></p>
       <ProfileForm profile={result.profile} token={token} onSaved={(profile) => setResult((current) => ({ ...current, profile }))} />
-      <IndustryInterests token={token} />
-      <CareerEntries kind="education" token={token} />
-      <CareerEntries kind="experience" token={token} />
+      {result.account_type !== "founder" && <>
+        <IndustryInterests token={token} />
+        <CareerEntries kind="education" token={token} />
+        <CareerEntries kind="experience" token={token} />
+      </>}
       
       <AccountSettings />
       <Link className="account-button account-button-primary" to="/">Explore startups</Link>

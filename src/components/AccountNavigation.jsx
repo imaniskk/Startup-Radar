@@ -19,7 +19,7 @@ export default function AccountNavigation() {
     <nav className="account-nav" aria-label="Account">
       {loading ? <span role="status">Loading account…</span> : user ? (
         <>
-          <Link className="account-button account-button-secondary" to={`/applicants/${user.id}`}>My account</Link>
+          <Link className="account-button account-button-secondary" to="/account">My account</Link>
           <button className="account-button account-button-primary" onClick={logout} disabled={busy}>{busy ? "Logging out…" : "Log out"}</button>
         </>
       ) : (
