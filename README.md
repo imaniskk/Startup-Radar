@@ -8,11 +8,12 @@ React/Vite frontend, FastAPI backend, and Supabase/PostgreSQL.
 2. Use a local Python environment and install `backend/requirements.txt`.
 3. Copy `backend/.env.example` to `backend/.env` and supply your Supabase URL and publishable key. Never commit `.env` files.
 4. Apply the account migration once; see [account schema setup](backend/migrations/README.md). Do not rerun an already applied migration.
-5. Start the backend from the repository root:
+5. After the account and applicant tables exist, apply `backend/migrations/20261109_04_job_applications.sql` once in the Supabase SQL Editor as postgres. This creates the job/application tables, RLS policies, and private PDF bucket. Do not rerun an already applied migration.
+6. Start the backend from the repository root:
    ```sh
    backend/.venv/bin/python -m uvicorn main:app --app-dir backend --host 127.0.0.1 --port 8000 --reload
    ```
-6. Start the frontend with `npm run dev` and open the displayed URL.
+7. Start the frontend with `npm run dev` and open the displayed URL.
 
 The frontend defaults to `http://127.0.0.1:8000`. To change it, set `VITE_API_URL` in a root `.env.local` and restart Vite. Update backend CORS origins if hosting the frontend at another origin.
 
@@ -26,7 +27,22 @@ Enable email/password authentication in Supabase. Set the Auth Site URL and allo
 
 `GET /account/me` requires a Bearer access token, verifies it with Supabase Auth, and reads the linked `user` and `applicant` rows using a fresh request-specific Supabase client with that token. RLS still applies. The `/account` page displays the result and reports missing registration-trigger records rather than silently creating a second profile.
 
-Applicant profiles publish name/email through the migration's public profile view. Registration labels these fields as public. Profile editing, email/password changes, saved-startup persistence, industry interests, education/experience editing, and public profile pages are implemented. No bonus features are implemented.
+Applicant profiles publish name/email through the migration's public profile view. Registration labels these fields as public. Profile editing, email/password changes, saved-startup persistence, industry interests, education/experience editing, public profile pages, and job applications are implemented.
+
+## Job applications
+
+Applicants can browse `/jobs`, save application drafts, answer founder-defined short-text, long-text, URL, and yes/no questions, and submit applications. Submitted applications start as pending and cannot be edited; applicants can see draft, pending, accepted, and rejected applications at `/applications`. Founders can publish openings with a company name, role title, description, and up to 30 questions, close or reopen them, review submitted answers, and set each decision to pending, accepted, or rejected.
+
+Resume and college-transcript PDFs are optional on each draft. Uploads are limited to 10 MB per file and stored in the private `application-documents` bucket. API ownership checks and Storage RLS allow the applicant and the hiring founder to access submitted documents; founders cannot view draft documents. Closing an opening prevents new applications and further edits/submissions to existing drafts, but submitted applications remain available for decisions.
+
+The migration depends on the existing `public.founder`, `public.applicant`, `public."user"`, and `public.applicant_public_profile` schema. The backend verifies account roles from `public."user"` and passes each user's JWT to both PostgREST and Storage. Apply the migration before using the job dashboard; the application endpoints do not create database schema automatically.
+
+Manual checks with founder and applicant accounts:
+
+1. As a founder, publish an opening with required and optional questions of each supported type. Close it and reopen it.
+2. As an applicant, start an application, save a draft, add either or both PDFs, and reload to confirm the draft persists. Required answers must be present before submission.
+3. Submit the application and verify it becomes pending and locked. From the founder dashboard, inspect the answers and PDFs, then change the decision to accepted or rejected.
+4. Verify another applicant cannot access that application or its documents, and another founder cannot view or decide it. These checks require the migration to be applied and do not run against the hosted project automatically.
 
 ## Verification
 
@@ -36,7 +52,7 @@ npm run lint
 backend/.venv/bin/python -m unittest discover -s backend/tests -v
 ```
 
-Backend tests use mocks, do not send emails or create hosted accounts, and cover token verification, per-user query scoping, missing profiles, and refusal to expose secret configuration. They do not prove hosted RLS behavior.
+Backend unit tests validate job-question definitions and answers, and verify that per-user Supabase clients pass the verified token to Storage. They do not exercise the hosted database or prove hosted RLS behavior.
 
 Manual end-to-end checks with test accounts:
 
@@ -49,7 +65,7 @@ Manual end-to-end checks with test accounts:
 
 ## Applicant account features
 
-The account page supports profile editing, email/password changes, industry interests, saved startups, and education/experience entries. Public profiles are available at `/applicants/<user UUID>` and can be viewed while logged out. No bonus features are included.
+The account page supports profile editing, email/password changes, industry interests, saved startups, and education/experience entries. Public profiles are available at `/applicants/<user UUID>` and can be viewed while logged out. Applicants can view their job-application history at `/applications`.
 
 Account endpoints (Bearer authentication required unless marked public):
 

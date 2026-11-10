@@ -125,7 +125,7 @@ export default function DiscoverPage() {
               setSelectedStage("All");
             }}
           />{" "}
-          Use local YC preview data (no backend required)
+          Use local YC preview data
         </label>
         <p className="discover-subtitle">
           {usePreview

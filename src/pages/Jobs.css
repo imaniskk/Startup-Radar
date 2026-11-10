@@ -1,0 +1,97 @@
+.jobs-page {
+  padding: 28px;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: #fff;
+  text-align: left;
+}
+
+.jobs-header { margin-bottom: 28px; }
+.jobs-header h1, .job-detail h1 { margin: 0 0 12px; font-size: 38px; line-height: 1.15; }
+.jobs-header p, .job-card > p, .job-description { line-height: 1.55; }
+.jobs-header a, .jobs-back-link { color: var(--heading-color); }
+.jobs-grid, .application-history { display: grid; gap: 18px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+.job-card, .job-detail {
+  padding: 22px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: #fffafd;
+}
+.job-card h2, .job-detail h2 { margin: 8px 0 12px; color: var(--heading-color); font-size: 22px; }
+.job-company { color: var(--heading-color); font-size: 14px; font-weight: 700; }
+.job-question-count, .optional-label { color: var(--text-muted); font-size: 14px; }
+.job-card .account-button { margin-top: 16px; }
+.jobs-empty, .jobs-callout { margin: 18px 0; padding: 14px; border-radius: 10px; background: var(--accent-soft); }
+.jobs-callout a { color: var(--heading-color); font-weight: 700; }
+.jobs-error { margin: 16px 0; color: #a01840; }
+.jobs-success { margin: 16px 0; color: #17653a; }
+.jobs-back-link { display: inline-block; margin-bottom: 18px; }
+.job-description { white-space: pre-wrap; }
+.job-question-list { padding-left: 22px; }
+.job-detail > .account-button { margin-top: 20px; }
+.application-editor { margin-top: 28px; padding-top: 22px; border-top: 1px solid var(--border); }
+.application-question { display: block; margin: 16px 0; font-weight: 700; }
+.application-question input:not([type="radio"]), .application-question textarea {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  margin-top: 6px;
+  padding: 10px;
+  border: 1px solid var(--input-border);
+  border-radius: 8px;
+  font: inherit;
+}
+.application-question textarea { min-height: 110px; resize: vertical; }
+.application-question input[type="radio"] { margin: 0 6px 0 14px; }
+.application-actions, .opening-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+.application-documents { margin: 20px 0; padding: 16px; border: 1px solid var(--border); border-radius: 10px; }
+.application-documents h3 { margin: 0 0 6px; color: var(--heading-color); font-size: 17px; }
+.application-documents > p { color: var(--text-muted); font-size: 14px; }
+.document-list { margin-top: 10px; }
+.document-row { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; padding: 8px 0; }
+.document-upload, .text-button { color: var(--heading-color); font: inherit; font-size: 14px; }
+.document-upload { cursor: pointer; text-decoration: underline; }
+.document-upload input { position: absolute; width: 1px; height: 1px; opacity: 0; }
+.text-button { padding: 3px 6px; border: 0; background: transparent; cursor: pointer; text-decoration: underline; }
+.text-button:disabled { cursor: wait; opacity: .6; }
+.application-status, .opening-state { display: inline-block; padding: 4px 10px; border-radius: 99px; background: var(--accent-soft); color: var(--heading-color); font-size: 13px; font-weight: 700; text-transform: capitalize; }
+.status-accepted, .state-open { background: #e4f6e9; color: #17653a; }
+.status-rejected, .state-closed { background: #fce7e7; color: #963737; }
+.application-history-card { display: flex; flex-direction: column; align-items: flex-start; }
+.application-history-card .application-documents { width: 100%; box-sizing: border-box; }
+.founder-jobs-page > section { margin-top: 30px; }
+.founder-jobs-page h2 { color: var(--heading-color); }
+.opening-form > label, .opening-question > label { display: block; margin: 14px 0; font-weight: 700; }
+.opening-form > label > input, .opening-form > label > textarea, .opening-question input:not([type="checkbox"]), .opening-question select, .decision-control select {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  margin-top: 6px;
+  padding: 10px;
+  border: 1px solid var(--input-border);
+  border-radius: 8px;
+  font: inherit;
+}
+.opening-form > label > textarea { min-height: 140px; resize: vertical; }
+.opening-questions { margin: 24px 0; }
+.opening-questions > p { color: var(--text-muted); font-size: 14px; }
+.opening-question { margin: 16px 0; padding: 12px; border: 1px solid var(--border); border-radius: 10px; }
+.opening-question legend { color: var(--heading-color); font-weight: 700; }
+.opening-question .required-question { display: flex; gap: 8px; align-items: center; }
+.opening-title-row { display: flex; justify-content: space-between; gap: 14px; align-items: flex-start; }
+.opening-title-row h3 { margin: 5px 0 14px; color: var(--heading-color); }
+.founder-applications { margin-top: 22px; padding-top: 18px; border-top: 1px solid var(--border); }
+.founder-application { margin-top: 16px; padding: 16px; border: 1px solid var(--border); border-radius: 10px; background: white; }
+.founder-application h4 { margin: 0 0 6px; color: var(--heading-color); }
+.founder-application > p { margin: 5px 0; }
+.application-answers { margin: 15px 0; }
+.application-answers > div { margin: 10px 0; }
+.application-answers dt { font-weight: 700; }
+.application-answers dd { margin: 4px 0 0; white-space: pre-wrap; overflow-wrap: anywhere; }
+.decision-control { display: block; max-width: 260px; margin-top: 16px; font-weight: 700; }
+
+@media (max-width: 600px) {
+  .jobs-page { padding: 18px; }
+  .jobs-header h1, .job-detail h1 { font-size: 30px; }
+  .job-card, .job-detail { padding: 16px; }
+}
