@@ -9,6 +9,10 @@ import EditAccountPage from "./pages/EditAccountPage";
 import { AuthProvider, useAuth } from "./auth/AuthProvider";
 import useSavedStartups from "./auth/useSavedStartups";
 import PublicProfilePage from "./pages/PublicProfilePage";
+import JobsPage from "./pages/JobsPage";
+import JobOpeningPage from "./pages/JobOpeningPage";
+import ApplicationsPage from "./pages/ApplicationsPage";
+import FounderJobsPage from "./pages/FounderJobsPage";
 import "./App.css";
 
 function AppLayout() {
@@ -55,6 +59,10 @@ export default function App() {
         <Routes>
           <Route element={<AppLayout />}>
             <Route index element={<DiscoverPage />} />
+            <Route path="jobs" element={<JobsPage />} />
+            <Route path="jobs/:openingId" element={<JobOpeningPage />} />
+            <Route path="applications" element={<ApplicationsPage />} />
+            <Route path="founder/jobs" element={<FounderJobsPage />} />
             <Route path="applicants/:userId" element={<PublicProfilePage />} />
             <Route path="account/edit" element={<EditAccountPage />} />
             <Route path="account" element={<AccountPage />} />

@@ -35,7 +35,11 @@ def user_client(token):
     config = public_auth_config()
     client = create_client(
         config["url"], config["publishableKey"],
-        options=SyncClientOptions(persist_session=False, auto_refresh_token=False),
+        options=SyncClientOptions(
+            headers={"Authorization": f"Bearer {token}"},
+            persist_session=False,
+            auto_refresh_token=False,
+        ),
     )
     client.postgrest.auth(token)
     return client
