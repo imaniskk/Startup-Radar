@@ -80,6 +80,9 @@ export default function FounderProfilePage() {
       </section>
 
       {profile && <div className="profile-history">
+        {ownProfile && profile.startups.length > 0 && (
+          <p><Link className="profile-text-link" to="/founder/startups/new">Register a startup →</Link></p>
+        )}
         {profile.startups.length ? profile.startups.map((startup) => (
           <section className="profile-panel profile-saved" key={startup.startup_id} aria-labelledby={`startup-${startup.startup_id}`}>
             <div className="profile-section-heading"><h2 id={`startup-${startup.startup_id}`}>{startup.name}</h2><span className="private-label">Company</span></div>
