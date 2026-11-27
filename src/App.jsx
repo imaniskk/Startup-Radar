@@ -14,6 +14,7 @@ import JobsPage from "./pages/JobsPage";
 import JobOpeningPage from "./pages/JobOpeningPage";
 import ApplicationsPage from "./pages/ApplicationsPage";
 import FounderJobsPage from "./pages/FounderJobsPage";
+import StartupEditorPage from "./pages/StartupEditorPage";
 import "./App.css";
 
 function AppLayout() {
@@ -66,6 +67,7 @@ export default function App() {
             <Route path="founder/jobs" element={<FounderJobsPage />} />
             <Route path="applicants/:userId" element={<PublicProfilePage />} />
             <Route path="founders/:userId" element={<FounderProfilePage />} />
+            <Route path="founder/startups/new" element={<StartupEditorPage />} />
             <Route path="account/edit" element={<EditAccountPage />} />
             <Route path="account" element={<AccountPage />} />
             <Route path="login" element={<LoginPage />} />

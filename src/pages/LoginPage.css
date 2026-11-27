@@ -18,6 +18,16 @@
   color-scheme: light;
 }
 
+.login-form select {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 7px 0 20px;
+  padding: 12px;
+  border: 1px solid var(--input-border);
+  border-radius: 10px;
+  font: inherit;
+}
+
 .login-form input::placeholder {
   color: var(--text-muted);
 }

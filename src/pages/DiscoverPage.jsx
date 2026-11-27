@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { useAuth } from "../auth/AuthProvider";
 import previewStartups from "../data/startups_seed.json";
 import "./DiscoverPage.css";
+import "./ProfilePage.css"
 
 export default function DiscoverPage() {
   const { user } = useAuth();
@@ -49,11 +50,18 @@ export default function DiscoverPage() {
         if (!Array.isArray(data)) {
           throw new Error("Expected a list of startups");
         }
-        setApiStartups(data.map((startup) => ({
-          ...startup,
-          id: startup.startup_id ?? startup.id,
-          funding_round: startup.funding_round ?? startup.seed_round ?? null,
-        })));
+        setApiStartups(data.map((startup) => {
+          const industries = (startup.startup_industry ?? [])
+          .map((row) => row.industry?.name)
+          .filter(Boolean);
+          return {
+            ...startup,
+            id: startup.startup_id ?? startup.id,
+            funding_round: startup.funding_round ?? startup.seed_round ?? null,
+            industries,
+            industry: industries[0] ?? null,
+          };
+        }));
       } catch (err) {
         if (controller.signal.aborted) return;
         console.error("Error loading startups:", err);
@@ -75,7 +83,7 @@ export default function DiscoverPage() {
 
     const matchesIndustry =
       selectedIndustry === "All" ||
-      startup.industry === selectedIndustry;
+      (startup.industries ?? [startup.industry]).filter(Boolean).includes(selectedIndustry);
 
     const matchesLocation =
       selectedLocation === "All" ||
@@ -98,7 +106,7 @@ export default function DiscoverPage() {
   });
 
   // Build filter options from real startup data
-  const industries = [...new Set(startups.map((s) => s.industry).filter(Boolean))];
+  const industries = [...new Set(startups.flatMap((s) => s.industries ?? [s.industry]).filter(Boolean))].sort();
   const locations = [...new Set(startups.map((s) => s.location).filter(Boolean))];
   const stages = [...new Set(startups.map((s) => s.funding_round ?? "Not verified").filter(Boolean))];
 
@@ -254,9 +262,11 @@ export default function DiscoverPage() {
                     {startup.description}
                   </p>
 
-                  <span className="startup-industry">
-                    {startup.industry}
-                  </span>
+                  <div className="interest-tags">
+                    {(startup.industries ?? [startup.industry]).filter(Boolean).map((name) => (
+                      <span key={name} className="startup-industry">{name}</span>
+                    ))}
+                  </div>
 
                   <p>📍 {startup.location}</p>
                   <p>🚀 Funding Stage: {startup.funding_round ?? "Not verified"}</p>
